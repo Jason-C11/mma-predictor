@@ -1,110 +1,130 @@
 "use client";
 
-import { useState } from "react";
-import FighterSearchBar from "@/components/FighterSearchBar";
+import { useEffect, useState } from "react";
 import { Fighter } from "@/lib/types/fighter";
 import { Probability } from "@/lib/types/probability";
 import { PredictionResult } from "@/lib/types/predictionResult";
-import { predictFight } from "@/lib/api";
+import { predictFight, fetchFighters } from "@/lib/api";
 import { Button } from "@mui/material";
-
-
-
+import SearchDropdown, { OptionType } from "@/components/SearchDropdown";
 
 export default function PredictionPage() {
-  const [fighter1, setFighter1] = useState<Fighter | null>(null);
-  const [fighter2, setFighter2] = useState<Fighter | null>(null);
+  const [allFighters, setAllFighters] = useState<OptionType[]>([]);
+  const [fighter1, setFighter1] = useState<OptionType | null>(null);
+  const [fighter2, setFighter2] = useState<OptionType | null>(null);
+  const [model, setModel] = useState<OptionType | null>({
+    label: "Random Forest",
+    id: "Random Forest",
+  });
   const [prediction, setPrediction] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
-  const [model, setModel] = useState<"Random Forest" | "XGBoost" | "LightGBM">("Random Forest");
 
-  
-const handlePredict = async () => {
-  if (!fighter1 || !fighter2) return;
-  setLoading(true);
-  try {
-    const result: PredictionResult | any = await predictFight(fighter1.fighter_id, fighter2.fighter_id, model);
+  // Model options
+  const modelOptions: OptionType[] = [
+    { label: "Random Forest", id: "Random Forest" },
+    { label: "XGBoost", id: "XGBoost" },
+    { label: "LightGBM", id: "LightGBM" },
+  ];
 
-    let formattedProbabilities = "";
-    if (Array.isArray(result.probabilities)) {
-      formattedProbabilities = result.probabilities
-        .map((p: Probability) => `${p.fighter}: ${(p.probability * 100).toFixed(1)}%`)
-        .join(", ");
-    } else if (result.probabilities && typeof result.probabilities === "object") {
-      formattedProbabilities = Object.entries(result.probabilities)
-        .map(([fighter, prob]) => `${fighter}: ${(prob as number * 100).toFixed(1)}%`)
-        .join(", ");
+  // Load fighter data
+  useEffect(() => {
+    const loadFighters = async () => {
+      const data: Fighter[] = await fetchFighters();
+      const options: OptionType[] = data.map((f) => ({
+        label: f.fighter_name,
+        id: f.fighter_id,
+      }));
+      setAllFighters(options);
+    };
+    loadFighters();
+  }, []);
+
+  const handlePredict = async () => {
+    if (!fighter1 || !fighter2 || !model) return;
+    setLoading(true);
+    try {
+      const result: PredictionResult | any = await predictFight(
+        fighter1.id,
+        fighter2.id,
+        model.id // use the id of the selected model
+      );
+
+      let formattedProbabilities = "";
+      if (Array.isArray(result.probabilities)) {
+        formattedProbabilities = result.probabilities
+          .map(
+            (p: Probability) =>
+              `${p.fighter}: ${(p.probability * 100).toFixed(1)}%`
+          )
+          .join(", ");
+      } else if (
+        result.probabilities &&
+        typeof result.probabilities === "object"
+      ) {
+        formattedProbabilities = Object.entries(result.probabilities)
+          .map(
+            ([fighter, prob]) =>
+              `${fighter}: ${((prob as number) * 100).toFixed(1)}%`
+          )
+          .join(", ");
+      }
+
+      setPrediction(`${result.predicted_winner} - (${formattedProbabilities})`);
+    } catch (error) {
+      console.error(error);
+      setPrediction("Error predicting fight");
+    } finally {
+      setLoading(false);
     }
+  };
 
-    // setPrediction(`${result.predicted_winner} - ${result.predicted_method} (${formattedProbabilities})`);
-    setPrediction(`${result.predicted_winner} - (${formattedProbabilities})`);
-  } catch (error) {
-    console.error(error);
-    setPrediction("Error predicting fight");
-  } finally {
-    setLoading(false);
-  }
-};
-// ==================================
-
- return (
+  return (
     <div className="p-4 space-y-4">
       <h1 className="text-xl font-bold">Predict a Fight</h1>
 
-      {/* Dropdown for model selection */}
+      {/* Model selection using SearchDropdown */}
       <div>
-        <label className="block mb-1 font-medium">Select Model</label>
-        <select
+        <SearchDropdown
+          options={modelOptions}
+          label="Select Model"
           value={model}
-          onChange={(e) =>
-            setModel(e.target.value as "Random Forest" | "XGBoost" | "LightGBM")
-          }
-          className="border border-gray-300 rounded p-2 w-full focus:outline-none focus:ring-2 focus:ring-blue-500 text-black bg-white"
-        >
-          <option value="Random Forest">Random Forest</option>
-          <option value="XGBoost">XGBoost</option>
-          <option value="LightGBM">LightGBM</option>
-        </select>
-      </div>
-
-
-      <div>
-        <label className="block mb-1">Fighter 1</label>
-        <FighterSearchBar
-          onSelect={setFighter1}
-          selectedId={fighter1?.fighter_id || ""}
-          selectedId2={fighter2?.fighter_id || ""}
+          onChange={setModel}
         />
       </div>
 
+      {/* Fighter 1 */}
       <div>
-        <label className="block mb-1">Fighter 2</label>
-        <FighterSearchBar
-          onSelect={setFighter2}
-          selectedId={fighter2?.fighter_id || ""}
-          selectedId2={fighter1?.fighter_id || ""}
+        <SearchDropdown
+          options={allFighters.filter((f) => f.id !== fighter2?.id)}
+          label="Fighter 1"
+          value={fighter1}
+          onChange={setFighter1}
         />
       </div>
 
+      {/* Fighter 2 */}
+      <div>
+        <SearchDropdown
+          options={allFighters.filter((f) => f.id !== fighter1?.id)}
+          label="Fighter 2"
+          value={fighter2}
+          onChange={setFighter2}
+        />
+      </div>
+
+      {/* Predict button */}
       <Button
         sx={{
-            px: 4,           
-            py: 2,              
-            backgroundColor: '#222222', 
-            color: 'white',     
-            borderRadius: 1,    
-            '&:disabled': {
-              color: 'white',
-              opacity: 0.5,     
-            },
-            '&:hover': {
-              color: 'black',
-              backgroundColor: '#fc0349', 
-            },
-          }}
-        className="px-4 py-2 bg-blue-600 text-white rounded disabled:opacity-50"
+          px: 4,
+          py: 2,
+          backgroundColor: "#a60000",
+          color: "white",
+          borderRadius: 1,
+          "&:disabled": { color: "white", opacity: 0.45 },
+          "&:hover": { color: "black", backgroundColor: "#fc0349" },
+        }}
         onClick={handlePredict}
-        disabled={!fighter1 || !fighter2 || loading}
+        disabled={!fighter1 || !fighter2 || !model || loading}
       >
         {loading ? "Predicting..." : "Predict Fight"}
       </Button>

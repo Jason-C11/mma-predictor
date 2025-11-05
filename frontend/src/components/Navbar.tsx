@@ -4,7 +4,7 @@ import { AppBar, Toolbar, Button, Box } from "@mui/material";
 
 export default function Navbar() {
   return (
-    <AppBar position="static" sx={{ borderRadius: 2, backgroundColor: '#222222' }}>
+    <AppBar position="static" sx={{ borderRadius: 2, backgroundColor: '#a60000' }}>
       <Toolbar>
         <Box sx={{ display: { xs: 'none', md: 'flex' }, gap: 2 }}>
           {[
