@@ -34,44 +34,10 @@ export default function SearchDropdown({
         <TextField
           {...params}
           label={label}
-          sx={{
-            "& .MuiInputLabel-root": {
-              color: "white", // default label color
-            },
-            "& .MuiInputLabel-root.Mui-focused": {
-              color: "#fc0349", // focused label color
-            },
-            "& .MuiOutlinedInput-root": {
-              backgroundColor: "#222", // input background
-              color: "white", // input text
-            },
-            "& .MuiOutlinedInput-root.Mui-focused": {
-              borderColor: "#555", // input border focused
-            },
-          }}
         />
       )}
       disablePortal
-      slotProps={{
-        popper: {
-          sx: {
-            "& .MuiAutocomplete-listbox": {
-              backgroundColor: "#222", // dropdown background
-              color: "white", // text color
-            },
-            "& .MuiAutocomplete-option:hover": {
-              backgroundColor: "#555", // hover background
-              color: "white", // hover text
-            },
-          },
-        },
-        clearIndicator: {
-          sx: { color: "white", "&:hover": { color: "#fc0349" } },
-        },
-        popupIndicator: {
-          sx: { color: "white", "&:hover": { color: "#fc0349" } },
-        },
-      }}
+
     />
   );
 }

@@ -4,7 +4,13 @@ import { AppBar, Toolbar, Button, Box } from "@mui/material";
 
 export default function Navbar() {
   return (
-    <AppBar position="static" sx={{ borderRadius: 2, backgroundColor: '#a60000' }}>
+    <AppBar
+      position="static"
+      sx={{
+        borderRadius: 2,
+        backgroundColor: '#a60000',
+      }}
+    >
       <Toolbar>
         <Box sx={{ display: { xs: 'none', md: 'flex' }, gap: 2 }}>
           {[
@@ -17,12 +23,15 @@ export default function Navbar() {
               key={page.name}
               component={Link}
               href={page.href}
+              variant="text" 
               sx={{
                 color: 'white',
+                backgroundColor: 'transparent', 
                 '&:hover': {
                   backgroundColor: '#fc0349',
                   color: 'black',
                 },
+                padding: '6px 16px', 
               }}
             >
               {page.name}

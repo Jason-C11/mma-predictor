@@ -5,7 +5,7 @@ import { Fighter } from "@/lib/types/fighter";
 import { Probability } from "@/lib/types/probability";
 import { PredictionResult } from "@/lib/types/predictionResult";
 import { predictFight, fetchFighters } from "@/lib/api";
-import { Button } from "@mui/material";
+import { Box, Button, Typography } from "@mui/material";
 import SearchDropdown, { OptionType } from "@/components/SearchDropdown";
 
 export default function PredictionPage() {
@@ -79,61 +79,70 @@ export default function PredictionPage() {
   };
 
   return (
-    <div className="p-4 space-y-4">
-      <h1 className="text-xl font-bold">Predict a Fight</h1>
+    <Box sx={{ p: 6 }}>
+      <Typography variant="h1" sx={{ pb: 4 }}>
+        {" "}
+        Predict a Fight{" "}
+      </Typography>
 
       {/* Model selection using SearchDropdown */}
-      <div>
+      <Box sx={{ pb: 2 }}>
         <SearchDropdown
           options={modelOptions}
           label="Select Model"
           value={model}
           onChange={setModel}
         />
-      </div>
+      </Box>
 
       {/* Fighter 1 */}
-      <div>
+      <Box sx={{ pb: 2 }}>
         <SearchDropdown
           options={allFighters.filter((f) => f.id !== fighter2?.id)}
           label="Fighter 1"
           value={fighter1}
           onChange={setFighter1}
         />
-      </div>
+      </Box>
 
       {/* Fighter 2 */}
-      <div>
+      <Box sx={{ pb: 2 }}>
         <SearchDropdown
           options={allFighters.filter((f) => f.id !== fighter1?.id)}
           label="Fighter 2"
           value={fighter2}
           onChange={setFighter2}
         />
-      </div>
+      </Box>
 
       {/* Predict button */}
       <Button
-        sx={{
-          px: 4,
-          py: 2,
-          backgroundColor: "#a60000",
-          color: "white",
-          borderRadius: 1,
-          "&:disabled": { color: "white", opacity: 0.45 },
-          "&:hover": { color: "black", backgroundColor: "#fc0349" },
-        }}
         onClick={handlePredict}
         disabled={!fighter1 || !fighter2 || !model || loading}
       >
         {loading ? "Predicting..." : "Predict Fight"}
       </Button>
 
-      {prediction && (
-        <div className="mt-4 p-2 bg-black-100 rounded">
-          <strong>Prediction:</strong> {prediction}
-        </div>
-      )}
-    </div>
+<Box sx={{ mt: 8, mb: 2}}>
+  {/* Label on top */}
+  <Typography variant="h2" sx={{ mb: 1 }}>
+    Prediction
+  </Typography>
+
+ 
+  <Box
+    sx={{
+      p: 2,
+      bgcolor: "#222",
+      borderRadius: 1,
+      minHeight: "2.5rem", 
+      display: "flex",
+      alignItems: "center",
+    }}
+  >
+    {prediction || " "}
+  </Box>
+</Box>
+    </Box>
   );
 }
