@@ -1,4 +1,4 @@
-import { Probability } from "./probability";
+import { Probability } from "./Probability";
 
 export interface PredictionResult {
   predicted_winner: string;

@@ -1,6 +1,6 @@
 import numpy as np
 import pandas as pd
-from db.mongo import fighters_career_avgs_collection
+from db.fighters_repo import get_all_fighters, get_fighter_avgs_by_id
 
 
 
@@ -30,7 +30,7 @@ all_features = ['sig_str_landed_fighter1', 'total_str_landed_fighter1',
 
 def get_fighter_stats(fighter_id: int):
     """Fetch fighter stats from MongoDB by fighter_id"""
-    fighter = fighters_career_avgs_collection.find_one({"fighter_id": fighter_id})
+    fighter = get_fighter_avgs_by_id(fighter_id)
     if not fighter:
         raise ValueError(f"Fighter with id {fighter_id} not found in DB")
     return fighter
@@ -43,7 +43,7 @@ def build_feature_vector(f1_id: int, f2_id: int):
     f2_name= f2["fighter"]
 
     #drop fighter_id, _id, fighter_name
-    drop_cols = ["fighter_id", "_id", "fighter"]
+    drop_cols = ["fighter_id", "fighter"]
     
     for key in drop_cols:
         del f1[key]

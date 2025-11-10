@@ -1,4 +1,4 @@
-from pymongo import MongoClient
+from pymongo import MongoClient, ASCENDING
 import os
 from dotenv import load_dotenv
 
@@ -18,3 +18,5 @@ fight_results_collection.create_index("fight_id", unique=True)
 
 fighters_collection = db["fighters"]
 fighters_collection.create_index("fighter_id", unique=True)
+
+fighters_collection.create_index([("fighter_name", ASCENDING)])

@@ -1,9 +1,9 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { Fighter } from "@/lib/types/fighter";
-import { Probability } from "@/lib/types/probability";
-import { PredictionResult } from "@/lib/types/predictionResult";
+import { Fighter } from "@/lib/types/Fighter";
+import { Probability } from "@/lib/types/Probability";
+import { PredictionResult } from "@/lib/types/PredictionResults";
 import { predictFight, fetchFighters } from "@/lib/api";
 import { Box, Button, Typography } from "@mui/material";
 import SearchDropdown, { OptionType } from "@/components/SearchDropdown";
@@ -79,7 +79,7 @@ export default function PredictionPage() {
   };
 
   return (
-    <Box sx={{ p: 6 }}>
+    <Box sx={{ p: 4 }}>
       <Typography variant="h1" sx={{ pb: 4 }}>
         {" "}
         Predict a Fight{" "}
