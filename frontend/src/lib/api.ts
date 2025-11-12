@@ -1,6 +1,6 @@
 import axios from "axios";
 import { PredictionResult } from "./types/PredictionResults";
-import { FighterStats } from "./types/FighterStats";
+import { FighterData } from "./types/FighterData";
 const API_BASE = process.env.NEXT_PUBLIC_API_BASE;
 
 export const fetchFighters = async () => {
@@ -8,8 +8,8 @@ export const fetchFighters = async () => {
   return res.data;
 };
 
-export const fetchFighterData = async (fighterId: string): Promise<FighterStats> => {
-  const res = await axios.get<FighterStats>(`${API_BASE}/fighters/stats`, {
+export const fetchFighterData = async (fighterId: string): Promise<FighterData> => {
+  const res = await axios.get<FighterData>(`${API_BASE}/fighters/stats`, {
     params: {
       fighter_id: fighterId, 
     },

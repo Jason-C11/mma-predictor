@@ -1,5 +1,5 @@
 
-export interface FighterStats {
+export interface FighterData {
   // Fighter info fields
   fighter_id: string;
   fighter_name: string;

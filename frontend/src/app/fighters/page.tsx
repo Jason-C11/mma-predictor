@@ -1,22 +1,23 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { FighterStats } from "@/lib/types/FighterStats";
+import { Fighter } from "@/lib/types/Fighter";
+import { FighterData } from "@/lib/types/FighterData";
 import SearchDropdown, { OptionType } from "@/components/SearchDropdown";
-import { Box, Typography } from "@mui/material";
+import { Box, Card, Grid, Stack, Tooltip, Typography } from "@mui/material";
 import { fetchFighters, fetchFighterData } from "@/lib/api";
-
+import InfoIcon from "@mui/icons-material/Info";
 export default function FighterStats() {
   const [fighter1, setFighter1] = useState<OptionType | null>(null);
   const [fighter2, setFighter2] = useState<OptionType | null>(null);
   const [allFighters, setAllFighters] = useState<OptionType[]>([]);
 
-  const [fighter1Stats, setFighter1Stats] = useState<FighterStats | null>(null);
-  const [fighter2Stats, setFighter2Stats] = useState<FighterStats | null>(null);
+  const [fighter1Stats, setFighter1Stats] = useState<FighterData | null>(null);
+  const [fighter2Stats, setFighter2Stats] = useState<FighterData | null>(null);
 
   useEffect(() => {
     const loadFighters = async () => {
-      const data = await fetchFighters();
+      const data: Fighter[] = await fetchFighters();
       const options: OptionType[] = data.map((f) => ({
         label: f.fighter_name,
         id: f.fighter_id,
@@ -50,66 +51,214 @@ export default function FighterStats() {
     }
   }, [fighter2]);
 
-  const renderStats = (stats: FighterStats) => {
-    const fmt = (num: number) => num.toFixed(2);
+  const statMapping: {
+    label: string;
+    key: keyof FighterData;
+    fmt?: (v: any) => string;
+  }[] = [
+    { label: "DOB", key: "dob" },
+    { label: "Reach", key: "reach" },
+    { label: "Stance", key: "stance" },
+    {
+      label: "Significant Strikes Landed",
+      key: "sig_str_landed",
+      fmt: (v: number) => v.toFixed(2),
+    },
+    {
+      label: "Total Strikes Landed",
+      key: "total_str_landed",
+      fmt: (v: number) => v.toFixed(2),
+    },
+    {
+      label: "Takedowns Landed",
+      key: "td_landed",
+      fmt: (v: number) => v.toFixed(2),
+    },
+    {
+      label: "Head Strikes Landed",
+      key: "head_landed",
+      fmt: (v: number) => v.toFixed(2),
+    },
+    {
+      label: "Body Strikes Landed",
+      key: "body_landed",
+      fmt: (v: number) => v.toFixed(2),
+    },
+    {
+      label: "Leg Strikes Landed",
+      key: "leg_landed",
+      fmt: (v: number) => v.toFixed(2),
+    },
+    {
+      label: "Distance Strikes Landed",
+      key: "distance_landed",
+      fmt: (v: number) => v.toFixed(2),
+    },
+    {
+      label: "Clinch Strikes Landed",
+      key: "clinch_landed",
+      fmt: (v: number) => v.toFixed(2),
+    },
+    {
+      label: "Ground Strikes Landed",
+      key: "ground_landed",
+      fmt: (v: number) => v.toFixed(2),
+    },
+    {
+      label: "Significant Strikes Attempted",
+      key: "sig_str_attempts",
+      fmt: (v: number) => v.toFixed(2),
+    },
+    {
+      label: "Total Strikes Attempted",
+      key: "total_str_attempts",
+      fmt: (v: number) => v.toFixed(2),
+    },
+    {
+      label: "Takedown Attempts",
+      key: "td_attempts",
+      fmt: (v: number) => v.toFixed(2),
+    },
+    { label: "Knockdowns", key: "kd", fmt: (v: number) => v.toFixed(2) },
+    {
+      label: "Submission Attempts",
+      key: "sub_att",
+      fmt: (v: number) => v.toFixed(2),
+    },
+    { label: "Reversals", key: "rev", fmt: (v: number) => v.toFixed(2) },
+    {
+      label: "Control Time (seconds)",
+      key: "ctrl_seconds",
+      fmt: (v: number) => v.toFixed(2),
+    },
+    {
+      label: "Significant Strike Accuracy",
+      key: "sig_str_acc",
+      fmt: (v: number) => v.toFixed(2) + " %",
+    },
+    {
+      label: "Takedown Accuracy",
+      key: "td_acc",
+      fmt: (v: number) => v.toFixed(2) + " %",
+    },
+  ];
 
-    return (
-      <Box sx={{ mt: 2 }}>
-        <Typography>DOB: {stats.dob || "-"}</Typography>
-        <Typography>Reach: {stats.reach || "-"}</Typography>
-        <Typography>Stance: {stats.stance || "-"}</Typography>
-        <Typography>Significant Strikes Landed: {fmt(stats.sig_str_landed)}</Typography>
-        <Typography>Total Strikes Landed: {fmt(stats.total_str_landed)}</Typography>
-        <Typography>Takedowns Landed: {fmt(stats.td_landed)}</Typography>
-        <Typography>Head Strikes Landed: {fmt(stats.head_landed)}</Typography>
-        <Typography>Body Strikes Landed: {fmt(stats.body_landed)}</Typography>
-        <Typography>Leg Strikes Landed: {fmt(stats.leg_landed)}</Typography>
-        <Typography>Distance Strikes Landed: {fmt(stats.distance_landed)}</Typography>
-        <Typography>Clinch Strikes Landed: {fmt(stats.clinch_landed)}</Typography>
-        <Typography>Ground Strikes Landed: {fmt(stats.ground_landed)}</Typography>
-        <Typography>Significant Strikes Attempted: {fmt(stats.sig_str_attempts)}</Typography>
-        <Typography>Total Strikes Attempted: {fmt(stats.total_str_attempts)}</Typography>
-        <Typography>Takedown Attempts: {fmt(stats.td_attempts)}</Typography>
-        <Typography>Knockdowns: {fmt(stats.kd)}</Typography>
-        <Typography>Submission Attempts: {fmt(stats.sub_att)}</Typography>
-        <Typography>Reversals: {fmt(stats.rev)}</Typography>
-        <Typography>Control Time (seconds): {fmt(stats.ctrl_seconds)}</Typography>
-        <Typography>Significant Strike Accuracy: {fmt(stats.sig_str_acc)} %</Typography>
-        <Typography>Takedown Accuracy: {fmt(stats.td_acc)} %</Typography>
-      </Box>
-    );
-  };
+  const getStatValue = (
+    stats: FighterData | null,
+    key: keyof FighterData,
+    fmt?: (v: any) => string
+  ) => (stats ? (fmt ? fmt(stats[key]) : stats[key] || "-") : "-");
+
+  const Fighter1StatsColumn = ({ stats }: { stats: FighterData | null }) => (
+    <Stack spacing={1}>
+      {statMapping.map(({ key, fmt }, idx) => (
+        <Card
+          key={idx}
+          sx={{ p: 0.5, borderRadius: 3, bgcolor: "#222", textAlign: "center" }}
+        >
+          <Typography>{getStatValue(stats, key, fmt)}</Typography>
+        </Card>
+      ))}
+    </Stack>
+  );
+
+  const StatsLabelsColumn = () => (
+    <Stack spacing={1}>
+      {statMapping.map(({ label }, idx) => (
+        <Card
+          key={idx}
+          sx={{
+            p: 0.5,
+            borderRadius: 3,
+            bgcolor: "#222",
+            color: "#bf9b30",
+            textAlign: "center",
+          }}
+        >
+          <Typography>{label}</Typography>
+        </Card>
+      ))}
+    </Stack>
+  );
+
+  const Fighter2StatsColumn = ({ stats }: { stats: FighterData | null }) => (
+    <Stack spacing={1}>
+      {statMapping.map(({ key, fmt }, idx) => (
+        <Card
+          key={idx}
+          sx={{ p: 0.5, borderRadius: 3, bgcolor: "#222", textAlign: "center" }}
+        >
+          <Typography>{getStatValue(stats, key, fmt)}</Typography>
+        </Card>
+      ))}
+    </Stack>
+  );
 
   return (
     <Box sx={{ width: "100%" }}>
-      <Box>
-        <Typography variant="h1" sx={{ pt: 4, pl: 4 }}>
+      <Box sx={{ pt: 4, pl: 21, pb: 4 }}>
+        <Typography
+          variant="h1"
+          sx={{ display: "inline-flex", alignItems: "center", gap: 1 }}
+        >
           Compare Stats
+          <Tooltip title="Average Stats Per Fight" arrow>
+            <InfoIcon fontSize="inherit" sx={{ cursor: "pointer" }} />
+          </Tooltip>
         </Typography>
       </Box>
 
-      <Box sx={{ display: "flex", width: "100%", p: 2 }}>
-        {/* Fighter 1 */}
-        <Box sx={{ width: "50%", p: 2 }}>
-          <SearchDropdown
-            options={allFighters.filter((f) => f.id !== fighter2?.id)}
-            label="Fighter 1"
-            value={fighter1}
-            onChange={setFighter1}
-          />
-          {fighter1Stats && renderStats(fighter1Stats)}
-        </Box>
+      <Box
+        sx={{
+          width: "80%",
+          mx: "auto",
+          p: 2,
+          bgcolor: "#222",
+          borderRadius: 3,
+        }}
+      >
+        <Box
+          sx={{
+            display: "flex",
+            width: "100%",
+            pb: 2,
+            justifyContent: "space-between",
+          }}
+        >
+          <Box sx={{ width: "38%" }}>
+            <SearchDropdown
+              options={allFighters.filter((f) => f.id !== fighter2?.id)}
+              label="Fighter 1"
+              value={fighter1}
+              onChange={setFighter1}
+            />
+          </Box>
 
-        {/* Fighter 2 */}
-        <Box sx={{ width: "50%", p: 2 }}>
-          <SearchDropdown
-            options={allFighters.filter((f) => f.id !== fighter1?.id)}
-            label="Fighter 2"
-            value={fighter2}
-            onChange={setFighter2}
-          />
-          {fighter2Stats && renderStats(fighter2Stats)}
+          <Box sx={{ width: "38%" }}>
+            <SearchDropdown
+              options={allFighters.filter((f) => f.id !== fighter1?.id)}
+              label="Fighter 2"
+              value={fighter2}
+              onChange={setFighter2}
+            />
+          </Box>
         </Box>
+        <Grid
+          container
+          spacing={2}
+          justifyContent="center"
+          alignItems="flex-start"
+        >
+          <Grid sx={{ flexGrow: 1 }}>
+            <Fighter1StatsColumn stats={fighter1Stats} />
+          </Grid>
+          <Grid sx={{ width: "20%" }}>
+            <StatsLabelsColumn />
+          </Grid>
+          <Grid sx={{ flexGrow: 1 }}>
+            <Fighter2StatsColumn stats={fighter2Stats} />
+          </Grid>
+        </Grid>
       </Box>
     </Box>
   );
