@@ -7,6 +7,8 @@ import SearchDropdown, { OptionType } from "@/components/SearchDropdown";
 import { Box, Card, Grid, Stack, Tooltip, Typography } from "@mui/material";
 import { fetchFighters, fetchFighterData } from "@/lib/api";
 import InfoIcon from "@mui/icons-material/Info";
+import { useQuery } from "@tanstack/react-query";
+
 export default function FighterStats() {
   const [fighter1, setFighter1] = useState<OptionType | null>(null);
   const [fighter2, setFighter2] = useState<OptionType | null>(null);
@@ -15,17 +17,25 @@ export default function FighterStats() {
   const [fighter1Stats, setFighter1Stats] = useState<FighterData | null>(null);
   const [fighter2Stats, setFighter2Stats] = useState<FighterData | null>(null);
 
+  const {
+    data: fighters,
+    isLoading,
+    error,
+  } = useQuery<Fighter[]>({
+    queryKey: ["fighters"],
+    queryFn: fetchFighters,
+  });
+
+  // Load fighter data
   useEffect(() => {
-    const loadFighters = async () => {
-      const data: Fighter[] = await fetchFighters();
-      const options: OptionType[] = data.map((f) => ({
+    if (fighters) {
+      const options = fighters.map((f) => ({
         label: f.fighter_name,
         id: f.fighter_id,
       }));
       setAllFighters(options);
-    };
-    loadFighters();
-  }, []);
+    }
+  }, [fighters]);
 
   useEffect(() => {
     if (fighter1?.id) {
@@ -195,7 +205,7 @@ export default function FighterStats() {
   );
 
   return (
-    <Box sx={{ width: "100%" }}>
+    <Box sx={{ width: "100%"}}>
       <Box sx={{ pt: 4, pl: 21, pb: 4 }}>
         <Typography
           variant="h1"
@@ -210,6 +220,8 @@ export default function FighterStats() {
 
       <Box
         sx={{
+          borderWidth:1.5,
+          borderColor: "#555",
           width: "80%",
           mx: "auto",
           p: 2,

@@ -7,6 +7,7 @@ import { PredictionResult } from "@/lib/types/PredictionResults";
 import { predictFight, fetchFighters } from "@/lib/api";
 import { Box, Button, Typography } from "@mui/material";
 import SearchDropdown, { OptionType } from "@/components/SearchDropdown";
+import { useQuery } from "@tanstack/react-query";
 
 export default function PredictionPage() {
   const [allFighters, setAllFighters] = useState<OptionType[]>([]);
@@ -26,18 +27,25 @@ export default function PredictionPage() {
     { label: "LightGBM", id: "LightGBM" },
   ];
 
+  const {
+    data: fighters,
+    isLoading,
+    error,
+  } = useQuery<Fighter[]>({
+    queryKey: ["fighters"],
+    queryFn: fetchFighters,
+  });
+  
   // Load fighter data
   useEffect(() => {
-    const loadFighters = async () => {
-      const data: Fighter[] = await fetchFighters();
-      const options: OptionType[] = data.map((f) => ({
+    if (fighters) {
+      const options = fighters.map((f) => ({
         label: f.fighter_name,
         id: f.fighter_id,
       }));
       setAllFighters(options);
-    };
-    loadFighters();
-  }, []);
+    }
+  }, [fighters]);
 
   const handlePredict = async () => {
     if (!fighter1 || !fighter2 || !model) return;
@@ -123,26 +131,25 @@ export default function PredictionPage() {
         {loading ? "Predicting..." : "Predict Fight"}
       </Button>
 
-<Box sx={{ mt: 8, mb: 2}}>
-  {/* Label on top */}
-  <Typography variant="h2" sx={{ mb: 1 }}>
-    Prediction
-  </Typography>
+      <Box sx={{ mt: 8, mb: 2 }}>
+        {/* Label on top */}
+        <Typography variant="h2" sx={{ mb: 1 }}>
+          Prediction
+        </Typography>
 
- 
-  <Box
-    sx={{
-      p: 2,
-      bgcolor: "#222",
-      borderRadius: 1,
-      minHeight: "2.5rem", 
-      display: "flex",
-      alignItems: "center",
-    }}
-  >
-    {prediction || " "}
-  </Box>
-</Box>
+        <Box
+          sx={{
+            p: 2,
+            bgcolor: "#222",
+            borderRadius: 1,
+            minHeight: "2.5rem",
+            display: "flex",
+            alignItems: "center",
+          }}
+        >
+          {prediction || " "}
+        </Box>
+      </Box>
     </Box>
   );
 }
