@@ -164,7 +164,14 @@ export default function FighterStats() {
       {statMapping.map(({ key, fmt }, idx) => (
         <Card
           key={idx}
-          sx={{ p: 0.5, borderRadius: 3, bgcolor: "#222", textAlign: "center" }}
+          sx={{
+            p: 0.5,
+            borderRadius: 3,
+            borderColor: "#555",
+            borderWidth: 0.5,
+            bgcolor: "#222",
+            textAlign: "center",
+          }}
         >
           <Typography>{getStatValue(stats, key, fmt)}</Typography>
         </Card>
@@ -180,12 +187,22 @@ export default function FighterStats() {
           sx={{
             p: 0.5,
             borderRadius: 3,
+            borderColor: "#555",
+            borderWidth: 0.5,
             bgcolor: "#222",
-            color: "#bf9b30",
+            color: "#D4CFCF",
             textAlign: "center",
           }}
         >
-          <Typography>{label}</Typography>
+          <Typography
+            sx={{
+              whiteSpace: "nowrap",
+              overflow: "hidden",
+              textOverflow: "ellipsis",
+            }}
+          >
+            {label}
+          </Typography>
         </Card>
       ))}
     </Stack>
@@ -196,7 +213,14 @@ export default function FighterStats() {
       {statMapping.map(({ key, fmt }, idx) => (
         <Card
           key={idx}
-          sx={{ p: 0.5, borderRadius: 3, bgcolor: "#222", textAlign: "center" }}
+          sx={{
+            p: 0.5,
+            borderRadius: 3,
+            bgcolor: "#222",
+            borderColor: "#555",
+            borderWidth: 0.5,
+            textAlign: "center",
+          }}
         >
           <Typography>{getStatValue(stats, key, fmt)}</Typography>
         </Card>
@@ -205,8 +229,8 @@ export default function FighterStats() {
   );
 
   return (
-    <Box sx={{ width: "100%"}}>
-      <Box sx={{ pt: 4, pl: 21, pb: 4 }}>
+    <Box component="main" sx={{ width: "100%" }}>
+      <Box sx={{ pt: 4, pb: 4, textAlign: "center" }}>
         <Typography
           variant="h1"
           sx={{ display: "inline-flex", alignItems: "center", gap: 1 }}
@@ -220,7 +244,7 @@ export default function FighterStats() {
 
       <Box
         sx={{
-          borderWidth:1.5,
+          borderWidth: 1.5,
           borderColor: "#555",
           width: "80%",
           mx: "auto",
