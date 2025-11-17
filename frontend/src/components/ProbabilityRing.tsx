@@ -46,10 +46,10 @@ export default function ProbabilityRing({
     >
       {/* Legend */}
       <Box sx={{ display: "flex", flexDirection: "column", gap: 1 }}>
-        <Typography sx={{ color: color1, fontWeight: "bold" }}>
+        <Typography sx={{ textAlign:"left", color: color1, fontWeight: "bold" }}>
           {label1}: {probability.toFixed(2)}%
         </Typography>
-        <Typography sx={{ color: color2, fontWeight: "bold" }}>
+        <Typography sx={{ textAlign:"left",  color: color2, fontWeight: "bold" }}>
           {label2}: {(100 - probability).toFixed(2)}%
         </Typography>
       </Box>
