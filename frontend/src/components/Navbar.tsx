@@ -9,7 +9,7 @@ export default function Navbar() {
     { name: 'Home', href: '/' },
     { name: 'Predict a Fight', href: '/predict' },
     { name: 'Fighter Stats', href: '/fighters' },
-    { name: 'Fight History', href: '/fightHistory' },
+    { name: 'Fighter History', href: '/fighterHistory' },
   ];
 
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);

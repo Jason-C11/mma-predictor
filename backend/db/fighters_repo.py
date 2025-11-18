@@ -1,6 +1,6 @@
 from typing import Optional, List, Dict
 from db.mongo import fighters_career_avgs_collection, fighters_collection, fighter_history_collection
-from models.fighter_career_avg import FighterCareerAvg  # your Pydantic model
+from models.fighter_career_avg import FighterCareerAvg 
 
 def get_all_fighters() -> List[Dict]:
     fighters = list(fighters_collection.find())
@@ -74,7 +74,7 @@ def get_fighter_history(fighter_id: str) -> Optional[list[dict]]:
     fighter_history = fighter_history_collection.find(
         {"fighter_id": fighter_id},
         {"_id": 0} 
-    ).sort("_id", -1)
+    ).sort("_id", 1)
 
     fighter_history_list = list(fighter_history)
 

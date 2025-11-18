@@ -230,18 +230,6 @@ export default function FighterStats() {
 
   return (
     <Box component="main" sx={{ width: "100%" }}>
-      <Box sx={{ pt: 4, pb: 4, textAlign: "center" }}>
-        <Typography
-          variant="h1"
-          sx={{ display: "inline-flex", alignItems: "center", gap: 1 }}
-        >
-          Compare Stats
-          <Tooltip title="Average Stats Per Fight" arrow>
-            <InfoIcon fontSize="inherit" sx={{ cursor: "pointer" }} />
-          </Tooltip>
-        </Typography>
-      </Box>
-
       <Box
         sx={{
           borderWidth: 1.5,
@@ -249,10 +237,28 @@ export default function FighterStats() {
           width: "80%",
           mx: "auto",
           p: 2,
+          mt: 4,
           bgcolor: "#222",
           borderRadius: 3,
         }}
       >
+        <Box sx={{ p: 2, textAlign: "center" }}>
+          <Typography
+            variant="h1"
+            sx={{
+              pb: { xs: 2, sm: 4 },
+              fontSize: { xs: "32px", sm: "48px", md: "64px" },
+              display: "inline-flex",
+              alignItems: "center",
+              gap: 1,
+            }}
+          >
+            Compare Stats
+            <Tooltip title="Average Stats Per Fight" arrow>
+              <InfoIcon fontSize="inherit" sx={{ cursor: "pointer" }} />
+            </Tooltip>
+          </Typography>
+        </Box>
         <Box
           sx={{
             display: "flex",

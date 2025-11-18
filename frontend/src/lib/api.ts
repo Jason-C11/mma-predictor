@@ -1,6 +1,7 @@
 import axios from "axios";
 import { PredictionResult } from "./types/PredictionResults";
 import { FighterData } from "./types/FighterData";
+import { FighterHistory } from "./types/FighterHistory";
 const API_BASE = process.env.NEXT_PUBLIC_API_BASE;
 
 export const fetchFighters = async () => {
@@ -8,21 +9,31 @@ export const fetchFighters = async () => {
   return res.data;
 };
 
-export const fetchFighterData = async (fighterId: string): Promise<FighterData> => {
+export const fetchFighterData = async (
+  fighterId: string
+): Promise<FighterData> => {
   const res = await axios.get<FighterData>(`${API_BASE}/fighters/stats`, {
     params: {
-      fighter_id: fighterId, 
+      fighter_id: fighterId,
     },
   });
 
   return res.data;
 };
 
-// To do
-// export const fetchFightResults = async () => {
-//   const res = await axios.get(`${API_BASE}/fighter/`);
-//   return res.data;
-// };
+export const fetchFighterHistory = async (
+  fighterId: string
+): Promise<FighterHistory[]> => {
+  const res = await axios.get<FighterHistory[]>(
+    `${API_BASE}/fighters/history`,
+    {
+      params: {
+        fighter_id: fighterId,
+      },
+    }
+  );
+  return res.data;
+};
 
 export const predictFight = async (
   fighter1Id: string,
