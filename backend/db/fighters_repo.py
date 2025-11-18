@@ -1,5 +1,5 @@
 from typing import Optional, List, Dict
-from db.mongo import fighters_career_avgs_collection, fighters_collection
+from db.mongo import fighters_career_avgs_collection, fighters_collection, fighter_history_collection
 from models.fighter_career_avg import FighterCareerAvg  # your Pydantic model
 
 def get_all_fighters() -> List[Dict]:
@@ -70,6 +70,16 @@ def get_fighter_avgs_with_info(fighter_id: str) -> Optional[Dict]:
 
     return formatted
 
+def get_fighter_history(fighter_id: str) -> Optional[list[dict]]:
+    fighter_history = fighter_history_collection.find(
+        {"fighter_id": fighter_id},
+        {"_id": 0} 
+    ).sort("_id", -1)
+
+    fighter_history_list = list(fighter_history)
+
+    return fighter_history_list
+
 
 
 #==================Formatting Helpers===============================
@@ -92,5 +102,7 @@ def format_fighter_avgs(fighter: dict) -> Dict[str, float]:
         "kd", "sub_att", "rev", "ctrl_seconds", "sig_str_acc", "td_acc"
     ]
     return {field: fighter.get(field, 0) or 0 for field in fields}
+
+
 
 
