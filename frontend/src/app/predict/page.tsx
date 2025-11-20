@@ -54,7 +54,7 @@ export default function PredictionPage() {
       let formattedProbabilities = "";
       if (result.probabilities && typeof result.probabilities === "object") {
         formattedProbabilities = Object.entries(result.probabilities)
-          .map(([f, prob]) => `${f}: ${((prob as number) * 100).toFixed(1)}%`)
+          .map(([f, prob]) => `${f}: ${((prob as number) * 100).toFixed(2)}%`)
           .join(", ");
       }
 
@@ -180,9 +180,10 @@ export default function PredictionPage() {
                 thickness={100}
               />
               <Typography
+                variant = "h1"
                 sx={{
                   mt: 2,
-                  fontSize: { xs: "16px", sm: "18px", md: "20px" },
+                  fontSize: { xs: "16px", sm: "18px", md: "20px", lg: "30px"},
                 }}
               >
                 {predictionData.text}
