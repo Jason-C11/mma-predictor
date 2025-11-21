@@ -93,7 +93,6 @@ export default function PredictionPage() {
         variant="h1"
         sx={{
           pb: { xs: 2, sm: 4 },
-          fontSize: { xs: "32px", sm: "48px", md: "64px" },
           textAlign: "center",
         }}
       >

@@ -18,7 +18,6 @@ export default function HomePage() {
     queryFn: fetchFighters,
   });
 
-
   useEffect(() => {
     async function loadNextFight() {
       try {
@@ -30,7 +29,6 @@ export default function HomePage() {
     }
     loadNextFight();
   }, []);
-
 
   useEffect(() => {
     if (!nextFight || !fighters) return;
@@ -86,7 +84,7 @@ export default function HomePage() {
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "center",
-        minHeight: 300, 
+        minHeight: 300,
       }}
     >
       <Box sx={{ p: 4 }}>
@@ -110,32 +108,22 @@ export default function HomePage() {
           mb: 6,
         }}
       >
-        <Typography
-          variant="h1"
-          sx={{
-            fontWeight: "bold",
-            textAlign: "center",
-            fontSize: { xs: "40px", sm: "60px", md: "80px", lg: "100px" },
-          }}
-        >
+        <Typography variant="h1">
           Enter The Octagon
           <SportsMmaIcon
             sx={{
-              fontSize: { xs: "40px", sm: "60px", md: "80px", lg: "100px" },
-              verticalAlign: "middle",
               ml: 1,
+              fontSize: {
+                xs: "2.5rem",
+                sm: "3.75rem",
+                md: "5rem",
+                lg: "6.25rem",
+              },
             }}
           />
         </Typography>
 
-        <Typography
-          variant="h2"
-          sx={{
-            color: "#fff",
-            textAlign: "center",
-            fontSize: { xs: "20px", sm: "28px", md: "36px", lg: "48px" },
-          }}
-        >
+        <Typography variant="h2" color="#fff" textAlign="center">
           ML Powered Fight Predictions
         </Typography>
 
@@ -145,14 +133,7 @@ export default function HomePage() {
           size="large"
           href="/predict"
         >
-          <Typography
-            variant="h2"
-            sx={{
-              fontSize: { xs: "18px", sm: "20px", md: "24px", lg: "28px" },
-            }}
-          >
-            Predict Now
-          </Typography>
+          <Typography variant="h3">Predict Now</Typography>
         </Button>
       </Box>
 
@@ -203,18 +184,15 @@ export default function HomePage() {
                 p: 2,
               }}
             >
-              <Typography variant="h1" sx={{ fontWeight: "bold" }}>
-                {nextFight.eventTitle}
-              </Typography>
-              <Typography variant="h2">{nextFight.eventDate}</Typography>
-              <Typography variant="h2">
+              <Typography variant="h2">{nextFight.eventTitle}</Typography>
+              <Typography variant="h3">{nextFight.eventDate}</Typography>
+              <Typography variant="h3">
                 {nextFight.fighter1} vs {nextFight.fighter2}
               </Typography>
             </Box>
           </Box>
         )}
 
-        {/* Prediction */}
         <Box
           sx={{
             flex: 1,
@@ -224,7 +202,6 @@ export default function HomePage() {
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
-            p: 2,
           }}
         >
           {!predictionData ? (
@@ -238,7 +215,7 @@ export default function HomePage() {
                 size={200}
                 thickness={100}
               />
-              <Typography variant="h1" sx={{ pt: 4 }}>
+              <Typography variant="h2" sx={{ pt: 4 }}>
                 {predictionData.text}
               </Typography>
             </Box>

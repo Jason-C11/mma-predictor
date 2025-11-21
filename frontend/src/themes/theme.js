@@ -1,12 +1,12 @@
 "use client";
 import { createTheme } from "@mui/material/styles";
-import { Work_Sans , Bebas_Neue } from "next/font/google";
+import { Work_Sans, Bebas_Neue } from "next/font/google";
 
 const bodyFont = "Work Sans, sans-serif";
 const headerFont = "Bebas Neue, sans-serif";
 
-const bebas = Bebas_Neue({ subsets: ['latin'], weight: ['400'] });
-const workSans = Work_Sans ({ subsets: ['latin'], weight: ['400'] });
+const bebas = Bebas_Neue({ subsets: ["latin"], weight: ["400"] });
+const workSans = Work_Sans({ subsets: ["latin"], weight: ["400"] });
 
 const theme = createTheme({
   palette: {
@@ -19,14 +19,28 @@ const theme = createTheme({
   typography: {
     fontFamily: bodyFont,
     h1: {
-      fontFamily: headerFont, //
+      fontFamily: headerFont,
       fontWeight: 400,
-      fontSize: "3rem",
+      fontSize: "2.5rem",
+      "@media (min-width:600px)": { fontSize: "3.75rem" },
+      "@media (min-width:900px)": { fontSize: "5rem" },
+      "@media (min-width:1200px)": { fontSize: "6.25rem" },
     },
     h2: {
       fontFamily: headerFont,
       fontWeight: 400,
-      fontSize: "2rem",
+      fontSize: "1.25rem",
+      "@media (min-width:600px)": { fontSize: "1.75rem" },
+      "@media (min-width:900px)": { fontSize: "2.25rem" },
+      "@media (min-width:1200px)": { fontSize: "3rem" },
+    },
+    h3: {
+      fontFamily: headerFont,
+      fontWeight: 400,
+      fontSize: "1rem",
+      "@media (min-width:600px)": { fontSize: "1.25rem" },
+      "@media (min-width:900px)": { fontSize: "1.5rem" },
+      "@media (min-width:1200px)": { fontSize: "1.75rem" },
     },
     button: {
       fontFamily: bodyFont,
@@ -34,6 +48,7 @@ const theme = createTheme({
       fontWeight: 600,
     },
   },
+
   components: {
     MuiButton: {
       styleOverrides: {
@@ -82,10 +97,10 @@ const theme = createTheme({
           "& .MuiOutlinedInput-root": {
             backgroundColor: "#222",
             color: "#fff",
-            fontFamily: bodyFont, 
+            fontFamily: bodyFont,
           },
           "& .MuiAutocomplete-input": {
-            fontFamily: bodyFont, 
+            fontFamily: bodyFont,
           },
           "& .MuiAutocomplete-clearIndicator": {
             color: "#fff",
@@ -104,7 +119,7 @@ const theme = createTheme({
               "& .MuiAutocomplete-listbox": {
                 backgroundColor: "#222",
                 color: "#fff",
-                fontFamily: bodyFont, 
+                fontFamily: bodyFont,
               },
               "& .MuiAutocomplete-option:hover": {
                 backgroundColor: "#555",
