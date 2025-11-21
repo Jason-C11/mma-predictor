@@ -1,11 +1,11 @@
 "use client";
 
-import { Box, Button, LinearProgress, Typography } from "@mui/material";
+import { Box, Button, CircularProgress, Typography } from "@mui/material";
 import SportsMmaIcon from "@mui/icons-material/SportsMma";
 import { useEffect, useState } from "react";
-import { PredictionResult } from "@/lib/types/PredictionResults";
 import { useQuery } from "@tanstack/react-query";
 import { fetchFighters, predictFight } from "@/lib/api";
+import { PredictionResult } from "@/lib/types/PredictionResults";
 import ProbabilityRing from "@/components/ProbabilityRing";
 
 export default function HomePage() {
@@ -18,24 +18,24 @@ export default function HomePage() {
     queryFn: fetchFighters,
   });
 
+
   useEffect(() => {
-    async function getNextFightData() {
+    async function loadNextFight() {
       try {
         const res = await fetch("/api/nextFight");
-        const data = await res.json();
-        setNextFight(data);
+        setNextFight(await res.json());
       } catch (err) {
         console.error(err);
       }
     }
-
-    getNextFightData();
+    loadNextFight();
   }, []);
 
-  useEffect(() => {
-    async function fetchPrediction() {
-      if (!nextFight || !fighters) return;
 
+  useEffect(() => {
+    if (!nextFight || !fighters) return;
+
+    async function loadPrediction() {
       const fighter1 = fighters.find(
         (f: any) =>
           f.fighter_name.toLowerCase() === nextFight.fighter1.toLowerCase()
@@ -44,7 +44,6 @@ export default function HomePage() {
         (f: any) =>
           f.fighter_name.toLowerCase() === nextFight.fighter2.toLowerCase()
       );
-
       if (!fighter1 || !fighter2) return;
 
       try {
@@ -72,38 +71,32 @@ export default function HomePage() {
         console.error(err);
       }
     }
-    fetchPrediction();
+
+    loadPrediction();
   }, [nextFight, fighters]);
 
-  if (!nextFight)
-    return (
-      <Box
-        component="main"
-        sx={{
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          justifyContent: "center",
-          minHeight: "50vh",
-          gap: 2,
-          px: 2,
-        }}
-      >
-        <Typography variant="h1" sx={{ textAlign: "center" }}>
-          Loading...
-        </Typography>
-        <Box sx={{ width: "80%", maxWidth: 400 }}>
-          <LinearProgress
-            sx={{
-              "& .MuiLinearProgress-bar": {
-                backgroundColor: "#a60000",
-              },
-              backgroundColor: "#555",
-            }}
-          />
-        </Box>
+  const LoadingBlock = (label: string) => (
+    <Box
+      sx={{
+        flex: 1,
+        maxWidth: { xs: "100%", md: "50%" },
+        borderRadius: 3,
+        bgcolor: "#222",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center",
+        minHeight: 300, 
+      }}
+    >
+      <Box sx={{ p: 4 }}>
+        <CircularProgress thickness={6} size={160} sx={{ color: "#a60000" }} />
       </Box>
-    );
+      <Typography variant="h2" color="#fff">
+        {label}
+      </Typography>
+    </Box>
+  );
 
   return (
     <Box component="main" sx={{ p: 4 }}>
@@ -113,8 +106,8 @@ export default function HomePage() {
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
-          mb: 6,
           gap: 2,
+          mb: 6,
         }}
       >
         <Typography
@@ -146,82 +139,80 @@ export default function HomePage() {
           ML Powered Fight Predictions
         </Typography>
 
-        <Box sx={{ display: "flex", justifyContent: "center", mt: 4 }}>
-          <Button
-            variant="contained"
-            color="primary"
-            size="large"
-            href="/predict"
+        <Button
+          variant="contained"
+          color="primary"
+          size="large"
+          href="/predict"
+        >
+          <Typography
+            variant="h2"
+            sx={{
+              fontSize: { xs: "18px", sm: "20px", md: "24px", lg: "28px" },
+            }}
           >
-            <Typography
-              variant="h2"
-              sx={{
-                fontSize: { xs: "18px", sm: "20px", md: "24px", lg: "28px" },
-              }}
-            >
-              Predict Now
-            </Typography>
-          </Button>
-        </Box>
+            Predict Now
+          </Typography>
+        </Button>
       </Box>
 
+      {/* Event Box */}
       <Box
         sx={{
           display: "flex",
           flexDirection: { xs: "column", md: "row" },
           gap: 4,
+          alignItems: "stretch",
           justifyContent: "center",
           width: "100%",
-          px: { xs: 2, sm: 4 },
           mt: 4,
+          px: { xs: 2, sm: 4 },
         }}
       >
-        {/* Banner with Overlay */}
-        <Box
-          sx={{
-            flex: 1,
-            maxWidth: { xs: "100%", md: "50%" },
-            position: "relative",
-            borderRadius: 2,
-            overflow: "hidden",
-            display: "flex",
-            alignItems: "flex-end", 
-            height: { xs: 250, sm: 300, md: 450, lg: 600 }, 
-          }}
-        >
-          {nextFight.bannerImages?.[0] && (
-            <img
-              src={nextFight.bannerImages[0].img}
-              alt={nextFight.eventTitle}
-              style={{
-                width: "100%",
-                height: "100%",
-                objectFit: "cover",
-              }}
-            />
-          )}
-
-          {/* Text overlay */}
+        {/* Event Banner */}
+        {!nextFight ? (
+          LoadingBlock("Loading event...")
+        ) : (
           <Box
             sx={{
-              position: "absolute",
-              bottom: 0,
-              left: 0,
-              width: "100%",
-              bgcolor: "rgba(0,0,0,0.5)",
-              color: "#fff",
-              p: 2,
+              flex: 1,
+              maxWidth: { xs: "100%", md: "50%" },
+              height: { xs: 250, sm: 300, md: 450, lg: 600 },
+              position: "relative",
+              borderRadius: 3,
+              overflow: "hidden",
+              display: "flex",
+              alignItems: "flex-end",
             }}
           >
-            <Typography variant="h1" sx={{ fontWeight: "bold" }}>
-              {nextFight.eventTitle}
-            </Typography>
-            <Typography variant="h2">{nextFight.eventDate}</Typography>
-            <Typography variant="h2">
-              {nextFight.fighter1} vs {nextFight.fighter2}
-            </Typography>
+            {nextFight.bannerImages?.[0] && (
+              <img
+                src={nextFight.bannerImages[0].img}
+                alt={nextFight.eventTitle}
+                style={{ width: "100%", height: "100%", objectFit: "cover" }}
+              />
+            )}
+
+            <Box
+              sx={{
+                position: "absolute",
+                bottom: 0,
+                width: "100%",
+                bgcolor: "rgba(0,0,0,0.5)",
+                color: "#fff",
+                p: 2,
+              }}
+            >
+              <Typography variant="h1" sx={{ fontWeight: "bold" }}>
+                {nextFight.eventTitle}
+              </Typography>
+              <Typography variant="h2">{nextFight.eventDate}</Typography>
+              <Typography variant="h2">
+                {nextFight.fighter1} vs {nextFight.fighter2}
+              </Typography>
+            </Box>
           </Box>
-        </Box>
+        )}
 
         {/* Prediction */}
         <Box
@@ -230,16 +221,15 @@ export default function HomePage() {
             maxWidth: { xs: "100%", md: "50%" },
             bgcolor: "#222",
             borderRadius: 3,
-            minHeight: 300,
             display: "flex",
-            flexDirection: "column",
             alignItems: "center",
-            justifyContent: "flex-start",
-            pt: 2,
+            justifyContent: "center",
             p: 2,
           }}
         >
-          {predictionData ? (
+          {!predictionData ? (
+            LoadingBlock("Loading Prediction...")
+          ) : (
             <Box sx={{ px: 4, pt: 6, textAlign: "left" }}>
               <ProbabilityRing
                 label1={predictionData.fighter1Label}
@@ -252,8 +242,6 @@ export default function HomePage() {
                 {predictionData.text}
               </Typography>
             </Box>
-          ) : (
-            <Typography color="#fff"> Predicting...</Typography>
           )}
         </Box>
       </Box>

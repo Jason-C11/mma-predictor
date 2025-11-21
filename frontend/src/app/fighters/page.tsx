@@ -144,12 +144,12 @@ export default function FighterStats() {
     {
       label: "Significant Strike Accuracy",
       key: "sig_str_acc",
-      fmt: (v: number) => v.toFixed(2) + " %",
+      fmt: (v: number) => (v * 100).toFixed(2) + " %",
     },
     {
       label: "Takedown Accuracy",
       key: "td_acc",
-      fmt: (v: number) => v.toFixed(2) + " %",
+      fmt: (v: number) => (v * 100).toFixed(2) + " %",
     },
   ];
 
