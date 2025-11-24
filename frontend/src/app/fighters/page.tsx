@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { Fighter } from "@/lib/types/Fighter";
 import { FighterData } from "@/lib/types/FighterData";
 import SearchDropdown, { OptionType } from "@/components/SearchDropdown";
-import { Box, Card, Grid, Stack, Tooltip, Typography } from "@mui/material";
+import { Box, Card, Stack, Tooltip, Typography } from "@mui/material";
 import { fetchFighters, fetchFighterData } from "@/lib/api";
 import InfoIcon from "@mui/icons-material/Info";
 import { useQuery } from "@tanstack/react-query";
@@ -160,7 +160,7 @@ export default function FighterStats() {
   ) => (stats ? (fmt ? fmt(stats[key]) : stats[key] || "-") : "-");
 
   const Fighter1StatsColumn = ({ stats }: { stats: FighterData | null }) => (
-    <Stack spacing={1}>
+    <Stack spacing={1} sx={{ minWidth: 120 }}>
       {statMapping.map(({ key, fmt }, idx) => (
         <Card
           key={idx}
@@ -182,34 +182,37 @@ export default function FighterStats() {
   const StatsLabelsColumn = () => (
     <Stack spacing={1}>
       {statMapping.map(({ label }, idx) => (
-        <Card
-          key={idx}
-          sx={{
-            p: 0.5,
-            borderRadius: 3,
-            borderColor: "#555",
-            borderWidth: 0.5,
-            bgcolor: "#222",
-            color: "#D4CFCF",
-            textAlign: "center",
-          }}
-        >
-          <Typography
+        <Tooltip key={idx} title={label} arrow>
+          <Card
             sx={{
-              whiteSpace: "nowrap",
-              overflow: "hidden",
-              textOverflow: "ellipsis",
+              p: 0.5,
+              px: 1.5,
+              borderRadius: 3,
+              borderColor: "#555",
+              borderWidth: 0.5,
+              bgcolor: "#222",
+              color: "#D4CFCF",
+              textAlign: "center",
+              cursor: "help",
             }}
           >
-            {label}
-          </Typography>
-        </Card>
+            <Typography
+              sx={{
+                whiteSpace: "nowrap",
+                overflow: "hidden",
+                textOverflow: "ellipsis",
+              }}
+            >
+              {label}
+            </Typography>
+          </Card>
+        </Tooltip>
       ))}
     </Stack>
   );
 
   const Fighter2StatsColumn = ({ stats }: { stats: FighterData | null }) => (
-    <Stack spacing={1}>
+    <Stack spacing={1} sx={{ minWidth: 120 }}>
       {statMapping.map(({ key, fmt }, idx) => (
         <Card
           key={idx}
@@ -229,7 +232,7 @@ export default function FighterStats() {
   );
 
   return (
-    <Box component="main" sx={{ width: "100%" }}>
+    <Box component="main" sx={{ width: "100%", pb:4}}>
       <Box
         sx={{
           borderWidth: 1.5,
@@ -285,22 +288,26 @@ export default function FighterStats() {
             />
           </Box>
         </Box>
-        <Grid
-          container
-          spacing={2}
-          justifyContent="center"
-          alignItems="flex-start"
+        <Box
+          sx={{
+            display: "flex",
+            gap: 2,
+            flexWrap: "nowrap", 
+            width: "100%",
+            overflowX: "auto", 
+            pb: 2,
+          }}
         >
-          <Grid sx={{ flexGrow: 1 }}>
+          <Box sx={{ flex: 1 }}>
             <Fighter1StatsColumn stats={fighter1Stats} />
-          </Grid>
-          <Grid sx={{ width: "20%" }}>
+          </Box>
+          <Box sx={{ flexShrink: 1, minWidth:150, maxWidth: 260 }}>
             <StatsLabelsColumn />
-          </Grid>
-          <Grid sx={{ flexGrow: 1 }}>
+          </Box>
+          <Box sx={{ flex: 1}}>
             <Fighter2StatsColumn stats={fighter2Stats} />
-          </Grid>
-        </Grid>
+          </Box>
+        </Box>
       </Box>
     </Box>
   );
