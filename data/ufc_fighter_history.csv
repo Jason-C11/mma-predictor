@@ -1,4 +1,162 @@
 event,fighter_name,opponent_name,weightclass,method,round,time,time_format,details,outcome
+UFC Fight Night: Tsarukyan vs. Hooker,Arman Tsarukyan,Dan Hooker,Lightweight Bout,Submission,2,3:34,5 Rnd (5-5-5-5-5),Arm Triangle From Mount,Win
+UFC Fight Night: Tsarukyan vs. Hooker,Dan Hooker,Arman Tsarukyan,Lightweight Bout,Submission,2,3:34,5 Rnd (5-5-5-5-5),Arm Triangle From Mount,Loss
+UFC Fight Night: Tsarukyan vs. Hooker,Belal Muhammad,Ian Machado Garry,Welterweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Anders Ohlsson 27 - 30.Vito Paolillo 27 - 30.Mark Collett 28 - 29.,Loss
+UFC Fight Night: Tsarukyan vs. Hooker,Ian Machado Garry,Belal Muhammad,Welterweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Anders Ohlsson 27 - 30.Vito Paolillo 27 - 30.Mark Collett 28 - 29.,Win
+UFC Fight Night: Tsarukyan vs. Hooker,Volkan Oezdemir,Alonzo Menifield,Light Heavyweight Bout,KO/TKO,1,1:27,3 Rnd (5-5-5),Punches to Head At Distance,Win
+UFC Fight Night: Tsarukyan vs. Hooker,Alonzo Menifield,Volkan Oezdemir,Light Heavyweight Bout,KO/TKO,1,1:27,3 Rnd (5-5-5),Punches to Head At Distance,Loss
+UFC Fight Night: Tsarukyan vs. Hooker,Jack Hermansson,Myktybek Orolbai,Welterweight Bout,KO/TKO,1,2:46,3 Rnd (5-5-5),Punch to Head At Distance,Loss
+UFC Fight Night: Tsarukyan vs. Hooker,Myktybek Orolbai,Jack Hermansson,Welterweight Bout,KO/TKO,1,2:46,3 Rnd (5-5-5),Punch to Head At Distance,Win
+UFC Fight Night: Tsarukyan vs. Hooker,Waldo Cortes Acosta,Shamil Gaziev,Heavyweight Bout,KO/TKO,1,1:22,3 Rnd (5-5-5),Punch to Head At Distance,Win
+UFC Fight Night: Tsarukyan vs. Hooker,Shamil Gaziev,Waldo Cortes Acosta,Heavyweight Bout,KO/TKO,1,1:22,3 Rnd (5-5-5),Punch to Head At Distance,Loss
+UFC Fight Night: Tsarukyan vs. Hooker,Tagir Ulanbekov,Kyoji Horiguchi,Flyweight Bout,Submission,3,2:18,3 Rnd (5-5-5),Rear Naked Choke,Loss
+UFC Fight Night: Tsarukyan vs. Hooker,Kyoji Horiguchi,Tagir Ulanbekov,Flyweight Bout,Submission,3,2:18,3 Rnd (5-5-5),Rear Naked Choke,Win
+UFC Fight Night: Tsarukyan vs. Hooker,Bogdan Grad,Luke Riley,Featherweight Bout,KO/TKO,2,0:30,3 Rnd (5-5-5),Punches to Head From Guard,Loss
+UFC Fight Night: Tsarukyan vs. Hooker,Luke Riley,Bogdan Grad,Featherweight Bout,KO/TKO,2,0:30,3 Rnd (5-5-5),Punches to Head From Guard,Win
+UFC Fight Night: Tsarukyan vs. Hooker,Nicolas Dalby,Saygid Izagakhmaev,Welterweight Bout,Decision - Split,3,5:00,3 Rnd (5-5-5),Ben Cartlidge 28 - 29.Vito Paolillo 29 - 28.Cezary Wojciechowski 28 - 29.,Win
+UFC Fight Night: Tsarukyan vs. Hooker,Saygid Izagakhmaev,Nicolas Dalby,Welterweight Bout,Decision - Split,3,5:00,3 Rnd (5-5-5),Ben Cartlidge 28 - 29.Vito Paolillo 29 - 28.Cezary Wojciechowski 28 - 29.,Loss
+UFC Fight Night: Tsarukyan vs. Hooker,Alex Perez,Asu Almabayev,Flyweight Bout,Submission,3,0:22,3 Rnd (5-5-5),Guillotine Choke In Clinch,Loss
+UFC Fight Night: Tsarukyan vs. Hooker,Asu Almabayev,Alex Perez,Flyweight Bout,Submission,3,0:22,3 Rnd (5-5-5),Guillotine Choke In Clinch,Win
+UFC Fight Night: Tsarukyan vs. Hooker,Abdul Rakhman Yakhyaev,Rafael Cerqueira,Light Heavyweight Bout,Submission,1,0:33,3 Rnd (5-5-5),Rear Naked Choke,Win
+UFC Fight Night: Tsarukyan vs. Hooker,Rafael Cerqueira,Abdul Rakhman Yakhyaev,Light Heavyweight Bout,Submission,1,0:33,3 Rnd (5-5-5),Rear Naked Choke,Loss
+UFC Fight Night: Tsarukyan vs. Hooker,Bekzat Almakhan,Aleksandre Topuria,Bantamweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Ben Cartlidge 27 - 30.Cezary Wojciechowski 27 - 30.Anders Ohlsson 28 - 29.,Loss
+UFC Fight Night: Tsarukyan vs. Hooker,Aleksandre Topuria,Bekzat Almakhan,Bantamweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Ben Cartlidge 27 - 30.Cezary Wojciechowski 27 - 30.Anders Ohlsson 28 - 29.,Win
+UFC Fight Night: Tsarukyan vs. Hooker,Ismail Naurdiev,Ryan Loder,Middleweight Bout,KO/TKO,1,1:26,3 Rnd (5-5-5),Punch to Head At Distance,Win
+UFC Fight Night: Tsarukyan vs. Hooker,Ryan Loder,Ismail Naurdiev,Middleweight Bout,KO/TKO,1,1:26,3 Rnd (5-5-5),Punch to Head At Distance,Loss
+UFC Fight Night: Tsarukyan vs. Hooker,Nurullo Aliev,Shem Rock,Lightweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Ben Cartlidge 27 - 30.Anders Ohlsson 27 - 30.Cezary Wojciechowski 27 - 30.,Win
+UFC Fight Night: Tsarukyan vs. Hooker,Shem Rock,Nurullo Aliev,Lightweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Ben Cartlidge 27 - 30.Anders Ohlsson 27 - 30.Cezary Wojciechowski 27 - 30.,Loss
+UFC Fight Night: Tsarukyan vs. Hooker,Marek Bujlo,Denzel Freeman,Heavyweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Vito Paolillo 27 - 30.Mark Collett 28 - 29.David Lethaby 28 - 29.,Loss
+UFC Fight Night: Tsarukyan vs. Hooker,Denzel Freeman,Marek Bujlo,Heavyweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Vito Paolillo 27 - 30.Mark Collett 28 - 29.David Lethaby 28 - 29.,Win
+UFC 322: Della Maddalena vs. Makhachev,Jack Della Maddalena,Islam Makhachev,UFC Welterweight Title Bout,Decision - Unanimous,5,5:00,5 Rnd (5-5-5-5-5),Derek Cleary 45 - 50.Sal D'amato 45 - 50.Ron McCarthy 45 - 50.,Loss
+UFC 322: Della Maddalena vs. Makhachev,Islam Makhachev,Jack Della Maddalena,UFC Welterweight Title Bout,Decision - Unanimous,5,5:00,5 Rnd (5-5-5-5-5),Derek Cleary 45 - 50.Sal D'amato 45 - 50.Ron McCarthy 45 - 50.,Win
+UFC 322: Della Maddalena vs. Makhachev,Valentina Shevchenko,Zhang Weili,UFC Women's Flyweight Title Bout,Decision - Unanimous,5,5:00,5 Rnd (5-5-5-5-5),Chris Bolinski 45 - 50.Eric Colon 45 - 50.Chris Lee 45 - 50.,Win
+UFC 322: Della Maddalena vs. Makhachev,Zhang Weili,Valentina Shevchenko,UFC Women's Flyweight Title Bout,Decision - Unanimous,5,5:00,5 Rnd (5-5-5-5-5),Chris Bolinski 45 - 50.Eric Colon 45 - 50.Chris Lee 45 - 50.,Loss
+UFC 322: Della Maddalena vs. Makhachev,Sean Brady,Michael Morales,Welterweight Bout,KO/TKO,1,3:27,3 Rnd (5-5-5),Punches to Head At Distance,Loss
+UFC 322: Della Maddalena vs. Makhachev,Michael Morales,Sean Brady,Welterweight Bout,KO/TKO,1,3:27,3 Rnd (5-5-5),Punches to Head At Distance,Win
+UFC 322: Della Maddalena vs. Makhachev,Leon Edwards,Carlos Prates,Welterweight Bout,KO/TKO,2,1:28,3 Rnd (5-5-5),Punch to Head At Distance,Loss
+UFC 322: Della Maddalena vs. Makhachev,Carlos Prates,Leon Edwards,Welterweight Bout,KO/TKO,2,1:28,3 Rnd (5-5-5),Punch to Head At Distance,Win
+UFC 322: Della Maddalena vs. Makhachev,Beneil Dariush,Benoit Saint Denis,Lightweight Bout,KO/TKO,1,0:16,3 Rnd (5-5-5),Punch to Head At Distance,Loss
+UFC 322: Della Maddalena vs. Makhachev,Benoit Saint Denis,Beneil Dariush,Lightweight Bout,KO/TKO,1,0:16,3 Rnd (5-5-5),Punch to Head At Distance,Win
+UFC 322: Della Maddalena vs. Makhachev,Bo Nickal,Rodolfo Vieira,Middleweight Bout,KO/TKO,3,2:24,3 Rnd (5-5-5),Kick to Head At Distance,Win
+UFC 322: Della Maddalena vs. Makhachev,Rodolfo Vieira,Bo Nickal,Middleweight Bout,KO/TKO,3,2:24,3 Rnd (5-5-5),Kick to Head At Distance,Loss
+UFC 322: Della Maddalena vs. Makhachev,Roman Kopylov,Gregory Rodrigues,Middleweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Eric Colon 27 - 30.Marcel Varela 27 - 30.Sal D'amato 28 - 29.,Loss
+UFC 322: Della Maddalena vs. Makhachev,Gregory Rodrigues,Roman Kopylov,Middleweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Eric Colon 27 - 30.Marcel Varela 27 - 30.Sal D'amato 28 - 29.,Win
+UFC 322: Della Maddalena vs. Makhachev,Erin Blanchfield,Tracy Cortez,Women's Flyweight Bout,Submission,2,4:44,3 Rnd (5-5-5),Rear Naked Choke,Win
+UFC 322: Della Maddalena vs. Makhachev,Tracy Cortez,Erin Blanchfield,Women's Flyweight Bout,Submission,2,4:44,3 Rnd (5-5-5),Rear Naked Choke,Loss
+UFC 322: Della Maddalena vs. Makhachev,Malcolm Wellmaker,Ethyn Ewing,Featherweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Chris Bolinski 27 - 30.Ron McCarthy 28 - 29.Marcel Varela 28 - 29.,Loss
+UFC 322: Della Maddalena vs. Makhachev,Ethyn Ewing,Malcolm Wellmaker,Featherweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Chris Bolinski 27 - 30.Ron McCarthy 28 - 29.Marcel Varela 28 - 29.,Win
+UFC 322: Della Maddalena vs. Makhachev,Kyle Daukaus,Gerald Meerschaert,Middleweight Bout,Submission,1,0:50,3 Rnd (5-5-5),D'Arce Choke On Ground,Win
+UFC 322: Della Maddalena vs. Makhachev,Gerald Meerschaert,Kyle Daukaus,Middleweight Bout,Submission,1,0:50,3 Rnd (5-5-5),D'Arce Choke On Ground,Loss
+UFC 322: Della Maddalena vs. Makhachev,Pat Sabatini,Chepe Mariscal,Featherweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Adrian Castro 27 - 30.Sal D'amato 27 - 30.Chris Lee 27 - 30.,Win
+UFC 322: Della Maddalena vs. Makhachev,Chepe Mariscal,Pat Sabatini,Featherweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Adrian Castro 27 - 30.Sal D'amato 27 - 30.Chris Lee 27 - 30.,Loss
+UFC 322: Della Maddalena vs. Makhachev,Angela Hill,Fatima Kline,Women's Strawweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Chris Bolinski 27 - 30.Marcel Varela 26 - 30.Eric Colon 28 - 29.,Loss
+UFC 322: Della Maddalena vs. Makhachev,Fatima Kline,Angela Hill,Women's Strawweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Chris Bolinski 27 - 30.Marcel Varela 26 - 30.Eric Colon 28 - 29.,Win
+UFC 322: Della Maddalena vs. Makhachev,Baisangur Susurkaev,Eric McConico,Middleweight Bout,KO/TKO,3,1:38,3 Rnd (5-5-5),Punch to Head At Distance,Win
+UFC 322: Della Maddalena vs. Makhachev,Eric McConico,Baisangur Susurkaev,Middleweight Bout,KO/TKO,3,1:38,3 Rnd (5-5-5),Punch to Head At Distance,Loss
+UFC 322: Della Maddalena vs. Makhachev,Viacheslav Borshchev,Matheus Camilo,Lightweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Adrian Castro 27 - 30.Marcel Varela 27 - 30.Chris Bolinski 28 - 29.,Loss
+UFC 322: Della Maddalena vs. Makhachev,Matheus Camilo,Viacheslav Borshchev,Lightweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Adrian Castro 27 - 30.Marcel Varela 27 - 30.Chris Bolinski 28 - 29.,Win
+UFC Fight Night: Bonfim vs. Brown,Gabriel Bonfim,Randy Brown,Welterweight Bout,KO/TKO,2,1:40,5 Rnd (5-5-5-5-5),Knee to Head In Clinch,Win
+UFC Fight Night: Bonfim vs. Brown,Randy Brown,Gabriel Bonfim,Welterweight Bout,KO/TKO,2,1:40,5 Rnd (5-5-5-5-5),Knee to Head In Clinch,Loss
+UFC Fight Night: Bonfim vs. Brown,Matt Schnell,Joseph Morales,Flyweight Bout,Submission,1,2:54,3 Rnd (5-5-5),Guillotine Choke From Guard,Loss
+UFC Fight Night: Bonfim vs. Brown,Joseph Morales,Matt Schnell,Flyweight Bout,Submission,1,2:54,3 Rnd (5-5-5),Guillotine Choke From Guard,Win
+UFC Fight Night: Bonfim vs. Brown,Muslim Salikhov,Uros Medic,Welterweight Bout,KO/TKO,1,1:03,3 Rnd (5-5-5),Punch to Head At Distance,Loss
+UFC Fight Night: Bonfim vs. Brown,Uros Medic,Muslim Salikhov,Welterweight Bout,KO/TKO,1,1:03,3 Rnd (5-5-5),Punch to Head At Distance,Win
+UFC Fight Night: Bonfim vs. Brown,Chris Padilla,Ismael Bonfim,Lightweight Bout,KO/TKO,2,4:30,3 Rnd (5-5-5),Punches to Head On Ground,Win
+UFC Fight Night: Bonfim vs. Brown,Ismael Bonfim,Chris Padilla,Lightweight Bout,KO/TKO,2,4:30,3 Rnd (5-5-5),Punches to Head On Ground,Loss
+UFC Fight Night: Bonfim vs. Brown,Christian Leroy Duncan,Marco Tulio,Middleweight Bout,KO/TKO,2,3:20,3 Rnd (5-5-5),Punch to Head At Distance,Win
+UFC Fight Night: Bonfim vs. Brown,Marco Tulio,Christian Leroy Duncan,Middleweight Bout,KO/TKO,2,3:20,3 Rnd (5-5-5),Punch to Head At Distance,Loss
+UFC Fight Night: Bonfim vs. Brown,Hyder Amil,Jamall Emmers,Featherweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Saleem Haniff 27 - 29.Ben Cartlidge 27 - 30.Chris Lee 27 - 30.,Loss
+UFC Fight Night: Bonfim vs. Brown,Jamall Emmers,Hyder Amil,Featherweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Saleem Haniff 27 - 29.Ben Cartlidge 27 - 30.Chris Lee 27 - 30.,Win
+UFC Fight Night: Bonfim vs. Brown,Ricky Simon,Raoni Barcelos,Bantamweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Eric Colon 28 - 29.Sal D'amato 28 - 29.Junichiro Kamijo 28 - 29.,Loss
+UFC Fight Night: Bonfim vs. Brown,Raoni Barcelos,Ricky Simon,Bantamweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Eric Colon 28 - 29.Sal D'amato 28 - 29.Junichiro Kamijo 28 - 29.,Win
+UFC Fight Night: Bonfim vs. Brown,Mayra Bueno Silva,Jacqueline Cavalcanti,Women's Bantamweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Eric Colon 27 - 30.Sal D'amato 27 - 30.Chris Lee 28 - 29.,Loss
+UFC Fight Night: Bonfim vs. Brown,Jacqueline Cavalcanti,Mayra Bueno Silva,Women's Bantamweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Eric Colon 27 - 30.Sal D'amato 27 - 30.Chris Lee 28 - 29.,Win
+UFC Fight Night: Bonfim vs. Brown,Josh Hokit,Max Gimenis,Heavyweight Bout,KO/TKO,1,0:56,3 Rnd (5-5-5),Punches to Head At Distance,Win
+UFC Fight Night: Bonfim vs. Brown,Max Gimenis,Josh Hokit,Heavyweight Bout,KO/TKO,1,0:56,3 Rnd (5-5-5),Punches to Head At Distance,Loss
+UFC Fight Night: Bonfim vs. Brown,Tecia Pennington,Denise Gomes,Women's Strawweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Eric Colon 27 - 30.Sal D'amato 27 - 30.Chris Lee 27 - 30.,Loss
+UFC Fight Night: Bonfim vs. Brown,Denise Gomes,Tecia Pennington,Women's Strawweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Eric Colon 27 - 30.Sal D'amato 27 - 30.Chris Lee 27 - 30.,Win
+UFC Fight Night: Bonfim vs. Brown,Miles Johns,Daniel Marcos,Bantamweight Bout,Submission,2,4:23,3 Rnd (5-5-5),Rear Naked Choke,Loss
+UFC Fight Night: Bonfim vs. Brown,Daniel Marcos,Miles Johns,Bantamweight Bout,Submission,2,4:23,3 Rnd (5-5-5),Rear Naked Choke,Win
+UFC Fight Night: Bonfim vs. Brown,Zach Reese,Jackson McVey,Catch Weight Bout,Submission,2,1:38,3 Rnd (5-5-5),Rear Naked Choke,Win
+UFC Fight Night: Bonfim vs. Brown,Jackson McVey,Zach Reese,Catch Weight Bout,Submission,2,1:38,3 Rnd (5-5-5),Rear Naked Choke,Loss
+UFC Fight Night: Garcia vs. Onama,Steve Garcia,David Onama,Featherweight Bout,KO/TKO,1,3:34,5 Rnd (5-5-5-5-5),Punches to Head On Ground,Win
+UFC Fight Night: Garcia vs. Onama,David Onama,Steve Garcia,Featherweight Bout,KO/TKO,1,3:34,5 Rnd (5-5-5-5-5),Punches to Head On Ground,Loss
+UFC Fight Night: Garcia vs. Onama,Waldo Cortes Acosta,Ante Delija,Heavyweight Bout,KO/TKO,1,3:59,3 Rnd (5-5-5),Punch to Head At Distance,Win
+UFC Fight Night: Garcia vs. Onama,Ante Delija,Waldo Cortes Acosta,Heavyweight Bout,KO/TKO,1,3:59,3 Rnd (5-5-5),Punch to Head At Distance,Loss
+UFC Fight Night: Garcia vs. Onama,Jeremiah Wells,Themba Gorimbo,Welterweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Eric Colon 28 - 29.Junichiro Kamijo 28 - 29.Ron McCarthy 28 - 29.,Win
+UFC Fight Night: Garcia vs. Onama,Themba Gorimbo,Jeremiah Wells,Welterweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Eric Colon 28 - 29.Junichiro Kamijo 28 - 29.Ron McCarthy 28 - 29.,Loss
+UFC Fight Night: Garcia vs. Onama,Isaac Dulgarian,Yadier del Valle,Featherweight Bout,Submission,1,3:41,3 Rnd (5-5-5),Rear Naked Choke,Loss
+UFC Fight Night: Garcia vs. Onama,Yadier del Valle,Isaac Dulgarian,Featherweight Bout,Submission,1,3:41,3 Rnd (5-5-5),Rear Naked Choke,Win
+UFC Fight Night: Garcia vs. Onama,Charles Radtke,Daniel Frunza,Welterweight Bout,Submission,3,4:29,3 Rnd (5-5-5),Rear Naked Choke,Win
+UFC Fight Night: Garcia vs. Onama,Daniel Frunza,Charles Radtke,Welterweight Bout,Submission,3,4:29,3 Rnd (5-5-5),Rear Naked Choke,Loss
+UFC Fight Night: Garcia vs. Onama,Allan Nascimento,Cody Durden,Catch Weight Bout,Submission,2,3:13,3 Rnd (5-5-5),Anaconda Choke On Ground,Win
+UFC Fight Night: Garcia vs. Onama,Cody Durden,Allan Nascimento,Catch Weight Bout,Submission,2,3:13,3 Rnd (5-5-5),Anaconda Choke On Ground,Loss
+UFC Fight Night: Garcia vs. Onama,Billy Elekana,Kevin Christian,Light Heavyweight Bout,Submission,1,3:33,3 Rnd (5-5-5),Rear Naked Choke,Win
+UFC Fight Night: Garcia vs. Onama,Kevin Christian,Billy Elekana,Light Heavyweight Bout,Submission,1,3:33,3 Rnd (5-5-5),Rear Naked Choke,Loss
+UFC Fight Night: Garcia vs. Onama,Timmy Cuamba,ChangHo Lee,Bantamweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Derek Cleary 28 - 29.Junichiro Kamijo 28 - 29.Ron McCarthy 28 - 29.,Win
+UFC Fight Night: Garcia vs. Onama,ChangHo Lee,Timmy Cuamba,Bantamweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Derek Cleary 28 - 29.Junichiro Kamijo 28 - 29.Ron McCarthy 28 - 29.,Loss
+UFC Fight Night: Garcia vs. Onama,Donte Johnson,Sedriques Dumas,Middleweight Bout,Submission,2,1:25,3 Rnd (5-5-5),Guillotine Choke On Ground,Win
+UFC Fight Night: Garcia vs. Onama,Sedriques Dumas,Donte Johnson,Middleweight Bout,Submission,2,1:25,3 Rnd (5-5-5),Guillotine Choke On Ground,Loss
+UFC Fight Night: Garcia vs. Onama,Ketlen Vieira,Norma Dumont,Women's Bantamweight Bout,Decision - Split,3,5:00,3 Rnd (5-5-5),Derek Cleary 28 - 29.Ron McCarthy 29 - 28.Eric Colon 28 - 29.,Loss
+UFC Fight Night: Garcia vs. Onama,Norma Dumont,Ketlen Vieira,Women's Bantamweight Bout,Decision - Split,3,5:00,3 Rnd (5-5-5),Derek Cleary 28 - 29.Ron McCarthy 29 - 28.Eric Colon 28 - 29.,Win
+UFC Fight Night: Garcia vs. Onama,Alice Ardelean,Montserrat Conejo Ruiz,Women's Strawweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Adalaide Byrd 27 - 30.Derek Cleary 27 - 30.Ron McCarthy 27 - 30.,Win
+UFC Fight Night: Garcia vs. Onama,Montserrat Conejo Ruiz,Alice Ardelean,Women's Strawweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Adalaide Byrd 27 - 30.Derek Cleary 27 - 30.Ron McCarthy 27 - 30.,Loss
+UFC Fight Night: Garcia vs. Onama,Phil Rowe,Seokhyeon Ko,Welterweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),David Lethaby 26 - 30.Eric Colon 27 - 30.David Sutherland 27 - 30.,Loss
+UFC Fight Night: Garcia vs. Onama,Seokhyeon Ko,Phil Rowe,Welterweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),David Lethaby 26 - 30.Eric Colon 27 - 30.David Sutherland 27 - 30.,Win
+UFC Fight Night: Garcia vs. Onama,Talita Alencar,Ariane Carnelossi,Women's Strawweight Bout,Submission,3,4:36,3 Rnd (5-5-5),Rear Naked Choke,Win
+UFC Fight Night: Garcia vs. Onama,Ariane Carnelossi,Talita Alencar,Women's Strawweight Bout,Submission,3,4:36,3 Rnd (5-5-5),Rear Naked Choke,Loss
+UFC 321: Aspinall vs. Gane,Tom Aspinall,Ciryl Gane,UFC Heavyweight Title Bout,Could Not Continue,1,4:35,5 Rnd (5-5-5-5-5),Eye poke by Gane,No Contest
+UFC 321: Aspinall vs. Gane,Ciryl Gane,Tom Aspinall,UFC Heavyweight Title Bout,Could Not Continue,1,4:35,5 Rnd (5-5-5-5-5),Eye poke by Gane,No Contest
+UFC 321: Aspinall vs. Gane,Virna Jandiroba,Mackenzie Dern,UFC Women's Strawweight Title Bout,Decision - Unanimous,5,5:00,5 Rnd (5-5-5-5-5),Mike Bell 47 - 48.Chris Lee 47 - 48.Sal D'amato 46 - 49.,Loss
+UFC 321: Aspinall vs. Gane,Mackenzie Dern,Virna Jandiroba,UFC Women's Strawweight Title Bout,Decision - Unanimous,5,5:00,5 Rnd (5-5-5-5-5),Mike Bell 47 - 48.Chris Lee 47 - 48.Sal D'amato 46 - 49.,Win
+UFC 321: Aspinall vs. Gane,Umar Nurmagomedov,Mario Bautista,Bantamweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Ben Cartlidge 27 - 30.Chris Lee 27 - 30.Jacob Montalvo 27 - 30.,Win
+UFC 321: Aspinall vs. Gane,Mario Bautista,Umar Nurmagomedov,Bantamweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Ben Cartlidge 27 - 30.Chris Lee 27 - 30.Jacob Montalvo 27 - 30.,Loss
+UFC 321: Aspinall vs. Gane,Alexander Volkov,Jailton Almeida,Heavyweight Bout,Decision - Split,3,5:00,3 Rnd (5-5-5),Tony Weeks 28 - 29.Mike Bell 29 - 28.Clemens Werner 28 - 29.,Win
+UFC 321: Aspinall vs. Gane,Jailton Almeida,Alexander Volkov,Heavyweight Bout,Decision - Split,3,5:00,3 Rnd (5-5-5),Tony Weeks 28 - 29.Mike Bell 29 - 28.Clemens Werner 28 - 29.,Loss
+UFC 321: Aspinall vs. Gane,Aleksandar Rakic,Azamat Murzakanov,Light Heavyweight Bout,KO/TKO,1,3:11,3 Rnd (5-5-5),Punch to Head At Distance,Loss
+UFC 321: Aspinall vs. Gane,Azamat Murzakanov,Aleksandar Rakic,Light Heavyweight Bout,KO/TKO,1,3:11,3 Rnd (5-5-5),Punch to Head At Distance,Win
+UFC 321: Aspinall vs. Gane,Nasrat Haqparast,Quillan Salkilld,Lightweight Bout,KO/TKO,1,2:30,3 Rnd (5-5-5),Kick to Head At Distance,Loss
+UFC 321: Aspinall vs. Gane,Quillan Salkilld,Nasrat Haqparast,Lightweight Bout,KO/TKO,1,2:30,3 Rnd (5-5-5),Kick to Head At Distance,Win
+UFC 321: Aspinall vs. Gane,Ikram Aliskerov,JunYong Park,Middleweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Ben Cartlidge 27 - 30.Sal D'amato 27 - 30.Clemens Werner 27 - 30.,Win
+UFC 321: Aspinall vs. Gane,JunYong Park,Ikram Aliskerov,Middleweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Ben Cartlidge 27 - 30.Sal D'amato 27 - 30.Clemens Werner 27 - 30.,Loss
+UFC 321: Aspinall vs. Gane,Ludovit Klein,Mateusz Rebecki,Lightweight Bout,Decision - Majority,3,5:00,3 Rnd (5-5-5),Chris Lee 28 - 29.Ben Cartlidge 27 - 28.Tony Weeks 28 - 28.,Win
+UFC 321: Aspinall vs. Gane,Mateusz Rebecki,Ludovit Klein,Lightweight Bout,Decision - Majority,3,5:00,3 Rnd (5-5-5),Chris Lee 28 - 29.Ben Cartlidge 27 - 28.Tony Weeks 28 - 28.,Loss
+UFC 321: Aspinall vs. Gane,Valter Walker,Louie Sutherland,Heavyweight Bout,Submission,1,1:24,3 Rnd (5-5-5),Heel Hook After Drop to Ground,Win
+UFC 321: Aspinall vs. Gane,Louie Sutherland,Valter Walker,Heavyweight Bout,Submission,1,1:24,3 Rnd (5-5-5),Heel Hook After Drop to Ground,Loss
+UFC 321: Aspinall vs. Gane,Nathaniel Wood,Jose Delgado,Featherweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Ben Cartlidge 28 - 29.Sal D'amato 28 - 29.Clemens Werner 28 - 29.,Win
+UFC 321: Aspinall vs. Gane,Jose Delgado,Nathaniel Wood,Featherweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Ben Cartlidge 28 - 29.Sal D'amato 28 - 29.Clemens Werner 28 - 29.,Loss
+UFC 321: Aspinall vs. Gane,Hamdy Abdelwahab,Chris Barnett,Heavyweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Mike Bell 26 - 29.Chris Lee 27 - 29.Jacob Montalvo 27 - 29.,Win
+UFC 321: Aspinall vs. Gane,Chris Barnett,Hamdy Abdelwahab,Heavyweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Mike Bell 26 - 29.Chris Lee 27 - 29.Jacob Montalvo 27 - 29.,Loss
+UFC 321: Aspinall vs. Gane,Azat Maksum,Mitch Raposo,Flyweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Ben Cartlidge 26 - 30.Tony Weeks 27 - 29.Clemens Werner 27 - 29.,Loss
+UFC 321: Aspinall vs. Gane,Mitch Raposo,Azat Maksum,Flyweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Ben Cartlidge 26 - 30.Tony Weeks 27 - 29.Clemens Werner 27 - 29.,Win
+UFC 321: Aspinall vs. Gane,Jaqueline Amorim,Mizuki,Women's Strawweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Mike Bell 27 - 30.Jacob Montalvo 27 - 30.Sal D'amato 28 - 29.,Loss
+UFC 321: Aspinall vs. Gane,Mizuki,Jaqueline Amorim,Women's Strawweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Mike Bell 27 - 30.Jacob Montalvo 27 - 30.Sal D'amato 28 - 29.,Win
+UFC Fight Night: De Ridder vs. Allen,Reinier de Ridder,Brendan Allen,Middleweight Bout,KO/TKO,4,5:00,5 Rnd (5-5-5-5-5),toCorner stoppage between rounds,Loss
+UFC Fight Night: De Ridder vs. Allen,Brendan Allen,Reinier de Ridder,Middleweight Bout,KO/TKO,4,5:00,5 Rnd (5-5-5-5-5),toCorner stoppage between rounds,Win
+UFC Fight Night: De Ridder vs. Allen,Kevin Holland,Mike Malott,Welterweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Jake Maxim 28 - 29.Mike Bell 28 - 29.Sal D'amato 28 - 29.,Loss
+UFC Fight Night: De Ridder vs. Allen,Mike Malott,Kevin Holland,Welterweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Jake Maxim 28 - 29.Mike Bell 28 - 29.Sal D'amato 28 - 29.,Win
+UFC Fight Night: De Ridder vs. Allen,Marlon Vera,Aiemann Zahabi,Bantamweight Bout,Decision - Split,3,5:00,3 Rnd (5-5-5),Jake Maxim 28 - 29.Sal D'amato 29 - 28.Mike Bell 28 - 29.,Loss
+UFC Fight Night: De Ridder vs. Allen,Aiemann Zahabi,Marlon Vera,Bantamweight Bout,Decision - Split,3,5:00,3 Rnd (5-5-5),Jake Maxim 28 - 29.Sal D'amato 29 - 28.Mike Bell 28 - 29.,Win
+UFC Fight Night: De Ridder vs. Allen,Manon Fiorot,Jasmine Jasudavicius,Women's Flyweight Bout,KO/TKO,1,1:14,3 Rnd (5-5-5),Punches to Head On Ground,Win
+UFC Fight Night: De Ridder vs. Allen,Jasmine Jasudavicius,Manon Fiorot,Women's Flyweight Bout,KO/TKO,1,1:14,3 Rnd (5-5-5),Punches to Head On Ground,Loss
+UFC Fight Night: De Ridder vs. Allen,Charles Jourdain,Davey Grant,Bantamweight Bout,Submission,1,3:05,3 Rnd (5-5-5),Guillotine Choke From Guard,Win
+UFC Fight Night: De Ridder vs. Allen,Davey Grant,Charles Jourdain,Bantamweight Bout,Submission,1,3:05,3 Rnd (5-5-5),Guillotine Choke From Guard,Loss
+UFC Fight Night: De Ridder vs. Allen,Kyle Nelson,Matt Frevola,Lightweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Sal D'amato 27 - 30.Jake Maxim 28 - 29.Mike Bell 28 - 29.,Win
+UFC Fight Night: De Ridder vs. Allen,Matt Frevola,Kyle Nelson,Lightweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Sal D'amato 27 - 30.Jake Maxim 28 - 29.Mike Bell 28 - 29.,Loss
+UFC Fight Night: De Ridder vs. Allen,Kyle Prepolec,Drew Dober,Lightweight Bout,KO/TKO,3,1:16,3 Rnd (5-5-5),Punches to Head At Distance,Loss
+UFC Fight Night: De Ridder vs. Allen,Drew Dober,Kyle Prepolec,Lightweight Bout,KO/TKO,3,1:16,3 Rnd (5-5-5),Punches to Head At Distance,Win
+UFC Fight Night: De Ridder vs. Allen,Cody Gibson,Aoriqileng,Bantamweight Bout,KO/TKO,1,0:21,3 Rnd (5-5-5),Punch to Head At Distance,Loss
+UFC Fight Night: De Ridder vs. Allen,Aoriqileng,Cody Gibson,Bantamweight Bout,KO/TKO,1,0:21,3 Rnd (5-5-5),Punch to Head At Distance,Win
+UFC Fight Night: De Ridder vs. Allen,Bruno Silva,HyunSung Park,Flyweight Bout,Submission,3,2:15,3 Rnd (5-5-5),Rear Naked Choke,Win
+UFC Fight Night: De Ridder vs. Allen,HyunSung Park,Bruno Silva,Flyweight Bout,Submission,3,2:15,3 Rnd (5-5-5),Rear Naked Choke,Loss
+UFC Fight Night: De Ridder vs. Allen,Danny Barlow,Djorden Santos,Middleweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Jake Maxim 28 - 29.Mike Bell 28 - 29.Saleem Haniff 28 - 29.,Loss
+UFC Fight Night: De Ridder vs. Allen,Djorden Santos,Danny Barlow,Middleweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Jake Maxim 28 - 29.Mike Bell 28 - 29.Saleem Haniff 28 - 29.,Win
+UFC Fight Night: De Ridder vs. Allen,Stephanie Luciano,Ravena Oliveira,Women's Strawweight Bout,Submission,3,2:50,3 Rnd (5-5-5),Rear Naked Choke,Win
+UFC Fight Night: De Ridder vs. Allen,Ravena Oliveira,Stephanie Luciano,Women's Strawweight Bout,Submission,3,2:50,3 Rnd (5-5-5),Rear Naked Choke,Loss
+UFC Fight Night: De Ridder vs. Allen,Azamat Bekoev,Yousri Belgaroui,Middleweight Bout,KO/TKO,3,0:55,3 Rnd (5-5-5),Punches to Head At Distance,Loss
+UFC Fight Night: De Ridder vs. Allen,Yousri Belgaroui,Azamat Bekoev,Middleweight Bout,KO/TKO,3,0:55,3 Rnd (5-5-5),Punches to Head At Distance,Win
+UFC Fight Night: De Ridder vs. Allen,Melissa Croden,Tainara Lisboa,Women's Bantamweight Bout,KO/TKO,3,4:32,3 Rnd (5-5-5),Punches to Head From Half Guard,Win
+UFC Fight Night: De Ridder vs. Allen,Tainara Lisboa,Melissa Croden,Women's Bantamweight Bout,KO/TKO,3,4:32,3 Rnd (5-5-5),Punches to Head From Half Guard,Loss
 UFC Fight Night: Oliveira vs. Gamrot,Charles Oliveira,Mateusz Gamrot,Lightweight Bout,Submission,2,2:48,5 Rnd (5-5-5-5-5),Rear Naked Choke,Win
 UFC Fight Night: Oliveira vs. Gamrot,Mateusz Gamrot,Charles Oliveira,Lightweight Bout,Submission,2,2:48,5 Rnd (5-5-5-5-5),Rear Naked Choke,Loss
 UFC Fight Night: Oliveira vs. Gamrot,Deiveson Figueiredo,Montel Jackson,Bantamweight Bout,Decision - Split,3,5:00,3 Rnd (5-5-5),Clemens Werner 28 - 29.Fabio Alves 29 - 28.Jerin Valel 28 - 29.,Win
@@ -95,8 +253,8 @@ UFC Fight Night: Lopes vs. Silva,Tatiana Suarez,Amanda Lemos,Women's Strawweight
 UFC Fight Night: Lopes vs. Silva,Amanda Lemos,Tatiana Suarez,Women's Strawweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Gino Garcia 28 - 29.Sal D'amato 28 - 29.Junichiro Kamijo 28 - 29.,Loss
 UFC Fight Night: Lopes vs. Silva,Jesus Aguilar,Luis Gurule,Flyweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Jesse Lorenty 27 - 30.Chris Lee 28 - 29.Junichiro Kamijo 28 - 29.,Win
 UFC Fight Night: Lopes vs. Silva,Luis Gurule,Jesus Aguilar,Flyweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Jesse Lorenty 27 - 30.Chris Lee 28 - 29.Junichiro Kamijo 28 - 29.,Loss
-UFC Fight Night: Lopes vs. Silva,Zachary Reese,Sedriques Dumas,Middleweight Bout,Could Not Continue,1,0:51,3 Rnd (5-5-5),Kick to Groin by Reese,No Contest
-UFC Fight Night: Lopes vs. Silva,Sedriques Dumas,Zachary Reese,Middleweight Bout,Could Not Continue,1,0:51,3 Rnd (5-5-5),Kick to Groin by Reese,No Contest
+UFC Fight Night: Lopes vs. Silva,Zach Reese,Sedriques Dumas,Middleweight Bout,Could Not Continue,1,0:51,3 Rnd (5-5-5),Kick to Groin by Reese,No Contest
+UFC Fight Night: Lopes vs. Silva,Sedriques Dumas,Zach Reese,Middleweight Bout,Could Not Continue,1,0:51,3 Rnd (5-5-5),Kick to Groin by Reese,No Contest
 UFC Fight Night: Lopes vs. Silva,Alessandro Costa,Alden Coria,Flyweight Bout,KO/TKO,3,0:47,3 Rnd (5-5-5),Punches to Head At Distance,Loss
 UFC Fight Night: Lopes vs. Silva,Alden Coria,Alessandro Costa,Flyweight Bout,KO/TKO,3,0:47,3 Rnd (5-5-5),Punches to Head At Distance,Win
 UFC Fight Night: Lopes vs. Silva,Montse Rendon,Alice Pereira,Women's Bantamweight Bout,Decision - Split,3,5:00,3 Rnd (5-5-5),Jesse Lorenty 28 - 29.Junichiro Kamijo 29 - 28.Gino Garcia 27 - 30.,Win
@@ -133,8 +291,8 @@ UFC Fight Night: Walker vs. Zhang,Johnny Walker,Zhang Mingyang,Light Heavyweight
 UFC Fight Night: Walker vs. Zhang,Zhang Mingyang,Johnny Walker,Light Heavyweight Bout,KO/TKO,2,2:37,5 Rnd (5-5-5-5-5),Punches to Head On Ground,Loss
 UFC Fight Night: Walker vs. Zhang,Brian Ortega,Aljamain Sterling,Catch Weight Bout,Decision - Unanimous,5,5:00,5 Rnd (5-5-5-5-5),Ben Cartlidge 45 - 50.David Lethaby 45 - 50.Vito Paolillo 45 - 50.,Loss
 UFC Fight Night: Walker vs. Zhang,Aljamain Sterling,Brian Ortega,Catch Weight Bout,Decision - Unanimous,5,5:00,5 Rnd (5-5-5-5-5),Ben Cartlidge 45 - 50.David Lethaby 45 - 50.Vito Paolillo 45 - 50.,Win
-UFC Fight Night: Walker vs. Zhang,Sergei Pavlovich,Waldo Cortes-Acosta,Heavyweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Evan Field 27 - 30.Mark Christie 28 - 29.Clemens Werner 28 - 29.,Win
-UFC Fight Night: Walker vs. Zhang,Waldo Cortes-Acosta,Sergei Pavlovich,Heavyweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Evan Field 27 - 30.Mark Christie 28 - 29.Clemens Werner 28 - 29.,Loss
+UFC Fight Night: Walker vs. Zhang,Sergei Pavlovich,Waldo Cortes Acosta,Heavyweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Evan Field 27 - 30.Mark Christie 28 - 29.Clemens Werner 28 - 29.,Win
+UFC Fight Night: Walker vs. Zhang,Waldo Cortes Acosta,Sergei Pavlovich,Heavyweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Evan Field 27 - 30.Mark Christie 28 - 29.Clemens Werner 28 - 29.,Loss
 UFC Fight Night: Walker vs. Zhang,Sumudaerji,Kevin Borjas,Flyweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Ben Cartlidge 27 - 30.Mark Christie 27 - 30.Dave Tirelli 27 - 30.,Win
 UFC Fight Night: Walker vs. Zhang,Kevin Borjas,Sumudaerji,Flyweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Ben Cartlidge 27 - 30.Mark Christie 27 - 30.Dave Tirelli 27 - 30.,Loss
 UFC Fight Night: Walker vs. Zhang,Taiyilake Nueraji,Kiefer Crosbie,Welterweight Bout,KO/TKO,1,3:33,3 Rnd (5-5-5),Elbows to Head On Ground,Win
@@ -387,8 +545,8 @@ UFC 316: Dvalishvili vs. O'Malley 2,Bruno Silva,Joshua Van,Flyweight Bout,KO/TKO
 UFC 316: Dvalishvili vs. O'Malley 2,Joshua Van,Bruno Silva,Flyweight Bout,KO/TKO,3,4:01,3 Rnd (5-5-5),Punches to Head On Ground,Win
 UFC 316: Dvalishvili vs. O'Malley 2,Azamat Murzakanov,Brendson Ribeiro,Light Heavyweight Bout,KO/TKO,1,3:25,3 Rnd (5-5-5),Punches to Head On Ground,Win
 UFC 316: Dvalishvili vs. O'Malley 2,Brendson Ribeiro,Azamat Murzakanov,Light Heavyweight Bout,KO/TKO,1,3:25,3 Rnd (5-5-5),Punches to Head On Ground,Loss
-UFC 316: Dvalishvili vs. O'Malley 2,Serghei Spivac,Waldo Cortes-Acosta,Heavyweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Tony Tamburrino 27 - 30.Jon Bilyk 28 - 29.Maimunah Querido 28 - 29.,Loss
-UFC 316: Dvalishvili vs. O'Malley 2,Waldo Cortes-Acosta,Serghei Spivac,Heavyweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Tony Tamburrino 27 - 30.Jon Bilyk 28 - 29.Maimunah Querido 28 - 29.,Win
+UFC 316: Dvalishvili vs. O'Malley 2,Serghei Spivac,Waldo Cortes Acosta,Heavyweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Tony Tamburrino 27 - 30.Jon Bilyk 28 - 29.Maimunah Querido 28 - 29.,Loss
+UFC 316: Dvalishvili vs. O'Malley 2,Waldo Cortes Acosta,Serghei Spivac,Heavyweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Tony Tamburrino 27 - 30.Jon Bilyk 28 - 29.Maimunah Querido 28 - 29.,Win
 UFC 316: Dvalishvili vs. O'Malley 2,Khaos Williams,Andreas Gustafsson,Welterweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Eric Colon 27 - 30.Sal D'amato 26 - 30.Chris Lee 26 - 30.,Loss
 UFC 316: Dvalishvili vs. O'Malley 2,Andreas Gustafsson,Khaos Williams,Welterweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Eric Colon 27 - 30.Sal D'amato 26 - 30.Chris Lee 26 - 30.,Win
 UFC 316: Dvalishvili vs. O'Malley 2,Ariane da Silva,Wang Cong,Women's Flyweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Jon Bilyk 27 - 30.Maimunah Querido 27 - 30.Tony Tamburrino 27 - 30.,Loss
@@ -407,14 +565,14 @@ UFC Fight Night: Blanchfield vs. Barber,Dustin Jacoby,Bruno Lopes,Light Heavywei
 UFC Fight Night: Blanchfield vs. Barber,Bruno Lopes,Dustin Jacoby,Light Heavyweight Bout,KO/TKO,1,1:50,3 Rnd (5-5-5),Punch to Head At Distance,Loss
 UFC Fight Night: Blanchfield vs. Barber,Ketlen Vieira,Macy Chiasson,Women's Featherweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Sal D'amato 27 - 30.Mike Bell 28 - 29.Chris Leben 28 - 29.,Win
 UFC Fight Night: Blanchfield vs. Barber,Macy Chiasson,Ketlen Vieira,Women's Featherweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Sal D'amato 27 - 30.Mike Bell 28 - 29.Chris Leben 28 - 29.,Loss
-UFC Fight Night: Blanchfield vs. Barber,Zachary Reese,Dusko Todorovic,Middleweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Eric Colon 28 - 29.Bryan Miner 28 - 29.Tony Weeks 28 - 29.,Win
-UFC Fight Night: Blanchfield vs. Barber,Dusko Todorovic,Zachary Reese,Middleweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Eric Colon 28 - 29.Bryan Miner 28 - 29.Tony Weeks 28 - 29.,Loss
+UFC Fight Night: Blanchfield vs. Barber,Zach Reese,Dusko Todorovic,Middleweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Eric Colon 28 - 29.Bryan Miner 28 - 29.Tony Weeks 28 - 29.,Win
+UFC Fight Night: Blanchfield vs. Barber,Dusko Todorovic,Zach Reese,Middleweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Eric Colon 28 - 29.Bryan Miner 28 - 29.Tony Weeks 28 - 29.,Loss
 UFC Fight Night: Blanchfield vs. Barber,Jafel Filho,Allan Nascimento,Flyweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Sal D'amato 28 - 29.Junichiro Kamijo 28 - 29.Chris Leben 28 - 29.,Loss
 UFC Fight Night: Blanchfield vs. Barber,Allan Nascimento,Jafel Filho,Flyweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Sal D'amato 28 - 29.Junichiro Kamijo 28 - 29.Chris Leben 28 - 29.,Win
 UFC Fight Night: Blanchfield vs. Barber,Kurt Holobaugh,Jordan Leavitt,Lightweight Bout,Submission,1,1:39,3 Rnd (5-5-5),Anaconda Choke On Ground,Loss
 UFC Fight Night: Blanchfield vs. Barber,Jordan Leavitt,Kurt Holobaugh,Lightweight Bout,Submission,1,1:39,3 Rnd (5-5-5),Anaconda Choke On Ground,Win
-UFC Fight Night: Blanchfield vs. Barber,Bolaji Oki,Michael Aswell,Lightweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Mike Bell 28 - 29.Ron McCarthy 28 - 29.Bryan Miner 28 - 29.,Win
-UFC Fight Night: Blanchfield vs. Barber,Michael Aswell,Bolaji Oki,Lightweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Mike Bell 28 - 29.Ron McCarthy 28 - 29.Bryan Miner 28 - 29.,Loss
+UFC Fight Night: Blanchfield vs. Barber,Bolaji Oki,Michael Aswell Jr.,Lightweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Mike Bell 28 - 29.Ron McCarthy 28 - 29.Bryan Miner 28 - 29.,Win
+UFC Fight Night: Blanchfield vs. Barber,Michael Aswell Jr.,Bolaji Oki,Lightweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Mike Bell 28 - 29.Ron McCarthy 28 - 29.Bryan Miner 28 - 29.,Loss
 UFC Fight Night: Blanchfield vs. Barber,Rayanne dos Santos,Alice Ardelean,Women's Strawweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Mike Bell 27 - 30.Eric Colon 28 - 29.Sal D'amato 28 - 29.,Loss
 UFC Fight Night: Blanchfield vs. Barber,Alice Ardelean,Rayanne dos Santos,Women's Strawweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Mike Bell 27 - 30.Eric Colon 28 - 29.Sal D'amato 28 - 29.,Win
 UFC Fight Night: Burns vs. Morales,Gilbert Burns,Michael Morales,Welterweight Bout,KO/TKO,1,3:39,5 Rnd (5-5-5-5-5),Punches to Head At Distance,Loss
@@ -463,8 +621,8 @@ UFC 315: Muhammad vs. Della Maddalena,Daniel Santos,JeongYeong Lee,Featherweight
 UFC 315: Muhammad vs. Della Maddalena,JeongYeong Lee,Daniel Santos,Featherweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Sal D'amato 27 - 30.Guy Girard 27 - 30.Pasquale Procopio 27 - 30.,Loss
 UFC 315: Muhammad vs. Della Maddalena,Brad Katona,Bekzat Almakhan,Bantamweight Bout,KO/TKO,1,1:04,3 Rnd (5-5-5),Punch to Head At Distance,Loss
 UFC 315: Muhammad vs. Della Maddalena,Bekzat Almakhan,Brad Katona,Bantamweight Bout,KO/TKO,1,1:04,3 Rnd (5-5-5),Punch to Head At Distance,Win
-UFC Fight Night: Sandhagen vs. Figueiredo,Cory Sandhagen,Deiveson Figueiredo,Bantamweight Bout,KO/TKO,2,4:08,5 Rnd (5-5-5-5-5),toKnee Injur,Win
-UFC Fight Night: Sandhagen vs. Figueiredo,Deiveson Figueiredo,Cory Sandhagen,Bantamweight Bout,KO/TKO,2,4:08,5 Rnd (5-5-5-5-5),toKnee Injur,Loss
+UFC Fight Night: Sandhagen vs. Figueiredo,Cory Sandhagen,Deiveson Figueiredo,Bantamweight Bout,KO/TKO,2,4:08,5 Rnd (5-5-5-5-5),toKnee Injury,Win
+UFC Fight Night: Sandhagen vs. Figueiredo,Deiveson Figueiredo,Cory Sandhagen,Bantamweight Bout,KO/TKO,2,4:08,5 Rnd (5-5-5-5-5),toKnee Injury,Loss
 UFC Fight Night: Sandhagen vs. Figueiredo,Reinier de Ridder,Bo Nickal,Middleweight Bout,KO/TKO,2,1:53,3 Rnd (5-5-5),Knee to Body At Distance,Win
 UFC Fight Night: Sandhagen vs. Figueiredo,Bo Nickal,Reinier de Ridder,Middleweight Bout,KO/TKO,2,1:53,3 Rnd (5-5-5),Knee to Body At Distance,Loss
 UFC Fight Night: Sandhagen vs. Figueiredo,Santiago Ponzinibbio,Daniel Rodriguez,Welterweight Bout,KO/TKO,3,1:12,3 Rnd (5-5-5),Punch to Head At Distance,Loss
@@ -627,8 +785,8 @@ UFC Fight Night: Vettori vs. Dolidze 2,Diyar Nurgozhay,Brendson Ribeiro,Light He
 UFC Fight Night: Vettori vs. Dolidze 2,Brendson Ribeiro,Diyar Nurgozhay,Light Heavyweight Bout,Submission,2,1:28,3 Rnd (5-5-5),Kimura From Bottom Side Control,Win
 UFC Fight Night: Vettori vs. Dolidze 2,SeungWoo Choi,Kevin Vallejos,Featherweight Bout,KO/TKO,1,3:09,3 Rnd (5-5-5),Punches to Head On Ground,Loss
 UFC Fight Night: Vettori vs. Dolidze 2,Kevin Vallejos,SeungWoo Choi,Featherweight Bout,KO/TKO,1,3:09,3 Rnd (5-5-5),Punches to Head On Ground,Win
-UFC Fight Night: Vettori vs. Dolidze 2,Waldo Cortes-Acosta,Ryan Spann,Heavyweight Bout,KO/TKO,2,4:48,3 Rnd (5-5-5),Punches to Head From Guard,Win
-UFC Fight Night: Vettori vs. Dolidze 2,Ryan Spann,Waldo Cortes-Acosta,Heavyweight Bout,KO/TKO,2,4:48,3 Rnd (5-5-5),Punches to Head From Guard,Loss
+UFC Fight Night: Vettori vs. Dolidze 2,Waldo Cortes Acosta,Ryan Spann,Heavyweight Bout,KO/TKO,2,4:48,3 Rnd (5-5-5),Punches to Head From Guard,Win
+UFC Fight Night: Vettori vs. Dolidze 2,Ryan Spann,Waldo Cortes Acosta,Heavyweight Bout,KO/TKO,2,4:48,3 Rnd (5-5-5),Punches to Head From Guard,Loss
 UFC Fight Night: Vettori vs. Dolidze 2,SuYoung You,AJ Cunningham,Bantamweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Eric Colon 27 - 30.Chris Leben 27 - 30.Tony Weeks 27 - 30.,Win
 UFC Fight Night: Vettori vs. Dolidze 2,AJ Cunningham,SuYoung You,Bantamweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Eric Colon 27 - 30.Chris Leben 27 - 30.Tony Weeks 27 - 30.,Loss
 UFC Fight Night: Vettori vs. Dolidze 2,Carlos Vera,Josias Musasa,Bantamweight Bout,Submission,1,3:16,3 Rnd (5-5-5),Rear Naked Choke,Win
@@ -787,8 +945,8 @@ UFC 311: Makhachev vs. Moicano,Kevin Holland,Reinier de Ridder,Middleweight Bout
 UFC 311: Makhachev vs. Moicano,Reinier de Ridder,Kevin Holland,Middleweight Bout,Submission,1,3:31,3 Rnd (5-5-5),Rear Naked Choke,Win
 UFC 311: Makhachev vs. Moicano,Payton Talbott,Raoni Barcelos,Bantamweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Chris Leben 27 - 30.Jonathan Romero 27 - 30.Chris Crail 26 - 30.,Loss
 UFC 311: Makhachev vs. Moicano,Raoni Barcelos,Payton Talbott,Bantamweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Chris Leben 27 - 30.Jonathan Romero 27 - 30.Chris Crail 26 - 30.,Win
-UFC 311: Makhachev vs. Moicano,Zachary Reese,Azamat Bekoev,Middleweight Bout,KO/TKO,1,3:04,3 Rnd (5-5-5),Punches to Head From Guard,Loss
-UFC 311: Makhachev vs. Moicano,Azamat Bekoev,Zachary Reese,Middleweight Bout,KO/TKO,1,3:04,3 Rnd (5-5-5),Punches to Head From Guard,Win
+UFC 311: Makhachev vs. Moicano,Zach Reese,Azamat Bekoev,Middleweight Bout,KO/TKO,1,3:04,3 Rnd (5-5-5),Punches to Head From Guard,Loss
+UFC 311: Makhachev vs. Moicano,Azamat Bekoev,Zach Reese,Middleweight Bout,KO/TKO,1,3:04,3 Rnd (5-5-5),Punches to Head From Guard,Win
 UFC 311: Makhachev vs. Moicano,Bogdan Guskov,Billy Elekana,Light Heavyweight Bout,Submission,2,3:33,3 Rnd (5-5-5),Guillotine Choke On Ground,Win
 UFC 311: Makhachev vs. Moicano,Billy Elekana,Bogdan Guskov,Light Heavyweight Bout,Submission,2,3:33,3 Rnd (5-5-5),Guillotine Choke On Ground,Loss
 UFC 311: Makhachev vs. Moicano,Grant Dawson,Diego Ferreira,Lightweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Felicia Oh 27 - 30.RaphaelDavis 27 - 30.Ron McCarthy 27 - 30.,Win
@@ -1163,8 +1321,8 @@ UFC Fight Night: Cannonier vs. Borralho,Edmen Shahbazyan,Gerald Meerschaert,Midd
 UFC Fight Night: Cannonier vs. Borralho,Gerald Meerschaert,Edmen Shahbazyan,Middleweight Bout,Submission,2,4:12,3 Rnd (5-5-5),Arm Triangle From Half Guard,Win
 UFC Fight Night: Cannonier vs. Borralho,Dennis Buzukja,Francis Marshall,Lightweight Bout,Decision - Split,3,5:00,3 Rnd (5-5-5),Ben Cartlidge 27 - 30.Adalaide Byrd 29 - 28.Junichiro Kamijo 28 - 29.,Loss
 UFC Fight Night: Cannonier vs. Borralho,Francis Marshall,Dennis Buzukja,Lightweight Bout,Decision - Split,3,5:00,3 Rnd (5-5-5),Ben Cartlidge 27 - 30.Adalaide Byrd 29 - 28.Junichiro Kamijo 28 - 29.,Win
-UFC Fight Night: Cannonier vs. Borralho,Zachary Reese,Jose Daniel Medina,Middleweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Eric Colon 27 - 30.Ron McCarthy 27 - 30.Tony Weeks 27 - 30.,Win
-UFC Fight Night: Cannonier vs. Borralho,Jose Daniel Medina,Zachary Reese,Middleweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Eric Colon 27 - 30.Ron McCarthy 27 - 30.Tony Weeks 27 - 30.,Loss
+UFC Fight Night: Cannonier vs. Borralho,Zach Reese,Jose Daniel Medina,Middleweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Eric Colon 27 - 30.Ron McCarthy 27 - 30.Tony Weeks 27 - 30.,Win
+UFC Fight Night: Cannonier vs. Borralho,Jose Daniel Medina,Zach Reese,Middleweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Eric Colon 27 - 30.Ron McCarthy 27 - 30.Tony Weeks 27 - 30.,Loss
 UFC Fight Night: Cannonier vs. Borralho,Viacheslav Borshchev,James Llontop,Lightweight Bout,Decision - Split,3,5:00,3 Rnd (5-5-5),Ben Cartlidge 28 - 29.Eric Colon 29 - 28.Mike Bell 27 - 30.,Win
 UFC Fight Night: Cannonier vs. Borralho,James Llontop,Viacheslav Borshchev,Lightweight Bout,Decision - Split,3,5:00,3 Rnd (5-5-5),Ben Cartlidge 28 - 29.Eric Colon 29 - 28.Mike Bell 27 - 30.,Loss
 UFC Fight Night: Cannonier vs. Borralho,Jacqueline Cavalcanti,Josiane Nunes,Women's Bantamweight Bout,Decision - Split,3,5:00,3 Rnd (5-5-5),Sal D'amato 27 - 30.Ron McCarthy 30 - 27.Chris Lee 28 - 29.,Win
@@ -1393,8 +1551,8 @@ UFC Fight Night: Cannonier vs. Imavov,Raul Rosas Jr.,Ricky Turcios,Bantamweight 
 UFC Fight Night: Cannonier vs. Imavov,Ricky Turcios,Raul Rosas Jr.,Bantamweight Bout,Submission,2,2:22,3 Rnd (5-5-5),Rear Naked Choke,Loss
 UFC Fight Night: Cannonier vs. Imavov,Brunno Ferreira,Dustin Stoltzfus,Middleweight Bout,KO/TKO,1,4:51,3 Rnd (5-5-5),Spinning Back Elbow to Head At Distance,Win
 UFC Fight Night: Cannonier vs. Imavov,Dustin Stoltzfus,Brunno Ferreira,Middleweight Bout,KO/TKO,1,4:51,3 Rnd (5-5-5),Spinning Back Elbow to Head At Distance,Loss
-UFC Fight Night: Cannonier vs. Imavov,Julian Marquez,Zachary Reese,Middleweight Bout,KO/TKO,1,0:20,3 Rnd (5-5-5),Punch to Head At Distance,Loss
-UFC Fight Night: Cannonier vs. Imavov,Zachary Reese,Julian Marquez,Middleweight Bout,KO/TKO,1,0:20,3 Rnd (5-5-5),Punch to Head At Distance,Win
+UFC Fight Night: Cannonier vs. Imavov,Julian Marquez,Zach Reese,Middleweight Bout,KO/TKO,1,0:20,3 Rnd (5-5-5),Punch to Head At Distance,Loss
+UFC Fight Night: Cannonier vs. Imavov,Zach Reese,Julian Marquez,Middleweight Bout,KO/TKO,1,0:20,3 Rnd (5-5-5),Punch to Head At Distance,Win
 UFC Fight Night: Cannonier vs. Imavov,Miguel Baeza,Punahele Soriano,Welterweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Sal D'amato 25 - 30.Derek Cleary 25 - 30.Chris Kinman 27 - 30.,Loss
 UFC Fight Night: Cannonier vs. Imavov,Punahele Soriano,Miguel Baeza,Welterweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Sal D'amato 25 - 30.Derek Cleary 25 - 30.Chris Kinman 27 - 30.,Win
 UFC Fight Night: Cannonier vs. Imavov,Thiago Moises,Ludovit Klein,Lightweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Rob Pope 27 - 30.Junichiro Kamijo 27 - 30.Mike Bell 27 - 30.,Loss
@@ -1471,8 +1629,8 @@ UFC Fight Night: Lewis vs. Nascimento,Diego Ferreira,Mateusz Rebecki,Lightweight
 UFC Fight Night: Lewis vs. Nascimento,Mateusz Rebecki,Diego Ferreira,Lightweight Bout,KO/TKO,3,4:51,3 Rnd (5-5-5),Punches to Head From Mount,Loss
 UFC Fight Night: Lewis vs. Nascimento,Alex Caceres,Sean Woodson,Featherweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Sal D'amato 28 - 29.Brian Puccillo 28 - 29.Henry Guery 27 - 30.,Loss
 UFC Fight Night: Lewis vs. Nascimento,Sean Woodson,Alex Caceres,Featherweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Sal D'amato 28 - 29.Brian Puccillo 28 - 29.Henry Guery 27 - 30.,Win
-UFC Fight Night: Lewis vs. Nascimento,Waldo Cortes-Acosta,Robelis Despaigne,Heavyweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Chris Lee 26 - 30.David Huyette 27 - 30.Travis Buesking 27 - 30.,Win
-UFC Fight Night: Lewis vs. Nascimento,Robelis Despaigne,Waldo Cortes-Acosta,Heavyweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Chris Lee 26 - 30.David Huyette 27 - 30.Travis Buesking 27 - 30.,Loss
+UFC Fight Night: Lewis vs. Nascimento,Waldo Cortes Acosta,Robelis Despaigne,Heavyweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Chris Lee 26 - 30.David Huyette 27 - 30.Travis Buesking 27 - 30.,Win
+UFC Fight Night: Lewis vs. Nascimento,Robelis Despaigne,Waldo Cortes Acosta,Heavyweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Chris Lee 26 - 30.David Huyette 27 - 30.Travis Buesking 27 - 30.,Loss
 UFC Fight Night: Lewis vs. Nascimento,Chase Hooper,Viacheslav Borshchev,Lightweight Bout,Submission,2,3:00,3 Rnd (5-5-5),D'Arce Choke On Ground,Win
 UFC Fight Night: Lewis vs. Nascimento,Viacheslav Borshchev,Chase Hooper,Lightweight Bout,Submission,2,3:00,3 Rnd (5-5-5),D'Arce Choke On Ground,Loss
 UFC Fight Night: Lewis vs. Nascimento,Terrance McKinney,Esteban Ribovics,Lightweight Bout,KO/TKO,1,0:37,3 Rnd (5-5-5),Kick to Head At Distance,Loss
@@ -1849,8 +2007,8 @@ UFC Fight Night: Ankalaev vs. Walker 2,Ricky Simon,Mario Bautista,Bantamweight B
 UFC Fight Night: Ankalaev vs. Walker 2,Mario Bautista,Ricky Simon,Bantamweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Sal D'amato 27 - 30.Chris Lee 27 - 30.Derek Cleary 28 - 29.,Win
 UFC Fight Night: Ankalaev vs. Walker 2,Phil Hawes,Brunno Ferreira,Middleweight Bout,KO/TKO,1,4:55,3 Rnd (5-5-5),Punch to Head At Distance,Loss
 UFC Fight Night: Ankalaev vs. Walker 2,Brunno Ferreira,Phil Hawes,Middleweight Bout,KO/TKO,1,4:55,3 Rnd (5-5-5),Punch to Head At Distance,Win
-UFC Fight Night: Ankalaev vs. Walker 2,Andrei Arlovski,Waldo Cortes-Acosta,Heavyweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Derek Cleary 28 - 29.Sal D'amato 28 - 29.Chris Lee 28 - 29.,Loss
-UFC Fight Night: Ankalaev vs. Walker 2,Waldo Cortes-Acosta,Andrei Arlovski,Heavyweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Derek Cleary 28 - 29.Sal D'amato 28 - 29.Chris Lee 28 - 29.,Win
+UFC Fight Night: Ankalaev vs. Walker 2,Andrei Arlovski,Waldo Cortes Acosta,Heavyweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Derek Cleary 28 - 29.Sal D'amato 28 - 29.Chris Lee 28 - 29.,Loss
+UFC Fight Night: Ankalaev vs. Walker 2,Waldo Cortes Acosta,Andrei Arlovski,Heavyweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Derek Cleary 28 - 29.Sal D'amato 28 - 29.Chris Lee 28 - 29.,Win
 UFC Fight Night: Ankalaev vs. Walker 2,Matthew Semelsberger,Preston Parsons,Welterweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Mike Bell 27 - 30.Junichiro Kamijo 27 - 30.Ron McCarthy 27 - 30.,Loss
 UFC Fight Night: Ankalaev vs. Walker 2,Preston Parsons,Matthew Semelsberger,Welterweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Mike Bell 27 - 30.Junichiro Kamijo 27 - 30.Ron McCarthy 27 - 30.,Win
 UFC Fight Night: Ankalaev vs. Walker 2,Marcus McGhee,Gaston Bolanos,Bantamweight Bout,KO/TKO,2,3:29,3 Rnd (5-5-5),Punches to Head At Distance,Win
@@ -1923,8 +2081,8 @@ UFC Fight Night: Dariush vs. Tsarukyan,Punahele Soriano,Dustin Stoltzfus,Middlew
 UFC Fight Night: Dariush vs. Tsarukyan,Dustin Stoltzfus,Punahele Soriano,Middleweight Bout,Submission,2,4:10,3 Rnd (5-5-5),Rear Naked Choke,Win
 UFC Fight Night: Dariush vs. Tsarukyan,Miesha Tate,Julia Avila,Women's Bantamweight Bout,Submission,3,1:15,3 Rnd (5-5-5),Rear Naked Choke,Win
 UFC Fight Night: Dariush vs. Tsarukyan,Julia Avila,Miesha Tate,Women's Bantamweight Bout,Submission,3,1:15,3 Rnd (5-5-5),Rear Naked Choke,Loss
-UFC Fight Night: Dariush vs. Tsarukyan,Zachary Reese,Cody Brundage,Middleweight Bout,KO/TKO,1,1:49,3 Rnd (5-5-5),Slam to On Ground,Loss
-UFC Fight Night: Dariush vs. Tsarukyan,Cody Brundage,Zachary Reese,Middleweight Bout,KO/TKO,1,1:49,3 Rnd (5-5-5),Slam to On Ground,Win
+UFC Fight Night: Dariush vs. Tsarukyan,Zach Reese,Cody Brundage,Middleweight Bout,KO/TKO,1,1:49,3 Rnd (5-5-5),Slam to On Ground,Loss
+UFC Fight Night: Dariush vs. Tsarukyan,Cody Brundage,Zach Reese,Middleweight Bout,KO/TKO,1,1:49,3 Rnd (5-5-5),Slam to On Ground,Win
 UFC Fight Night: Dariush vs. Tsarukyan,Drakkar Klose,Joe Solecki,Lightweight Bout,KO/TKO,1,1:41,3 Rnd (5-5-5),Slam to On Ground,Win
 UFC Fight Night: Dariush vs. Tsarukyan,Joe Solecki,Drakkar Klose,Lightweight Bout,KO/TKO,1,1:41,3 Rnd (5-5-5),Slam to On Ground,Loss
 UFC Fight Night: Dariush vs. Tsarukyan,Rodolfo Bellato,Ihor Potieria,Light Heavyweight Bout,KO/TKO,2,4:17,3 Rnd (5-5-5),Punches to Head From Mount,Win
@@ -2177,8 +2335,8 @@ UFC Fight Night: Holloway vs. The Korean Zombie,Erin Blanchfield,Taila Santos,Wo
 UFC Fight Night: Holloway vs. The Korean Zombie,Taila Santos,Erin Blanchfield,Women's Flyweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Howie Booth 28 - 29.Ben Cartlidge 28 - 29.Luke Hill 28 - 29.,Loss
 UFC Fight Night: Holloway vs. The Korean Zombie,Junior Tafa,Parker Porter,Heavyweight Bout,KO/TKO,1,1:24,3 Rnd (5-5-5),Punch to Head At Distance,Win
 UFC Fight Night: Holloway vs. The Korean Zombie,Parker Porter,Junior Tafa,Heavyweight Bout,KO/TKO,1,1:24,3 Rnd (5-5-5),Punch to Head At Distance,Loss
-UFC Fight Night: Holloway vs. The Korean Zombie,Waldo Cortes-Acosta,Lukasz Brzeski,Heavyweight Bout,KO/TKO,1,3:01,3 Rnd (5-5-5),Punches to Head At Distance,Win
-UFC Fight Night: Holloway vs. The Korean Zombie,Lukasz Brzeski,Waldo Cortes-Acosta,Heavyweight Bout,KO/TKO,1,3:01,3 Rnd (5-5-5),Punches to Head At Distance,Loss
+UFC Fight Night: Holloway vs. The Korean Zombie,Waldo Cortes Acosta,Lukasz Brzeski,Heavyweight Bout,KO/TKO,1,3:01,3 Rnd (5-5-5),Punches to Head At Distance,Win
+UFC Fight Night: Holloway vs. The Korean Zombie,Lukasz Brzeski,Waldo Cortes Acosta,Heavyweight Bout,KO/TKO,1,3:01,3 Rnd (5-5-5),Punches to Head At Distance,Loss
 UFC Fight Night: Holloway vs. The Korean Zombie,Toshiomi Kazama,Garrett Armfield,Bantamweight Bout,KO/TKO,1,4:16,3 Rnd (5-5-5),Punches to Head At Distance,Loss
 UFC Fight Night: Holloway vs. The Korean Zombie,Garrett Armfield,Toshiomi Kazama,Bantamweight Bout,KO/TKO,1,4:16,3 Rnd (5-5-5),Punches to Head At Distance,Win
 UFC Fight Night: Holloway vs. The Korean Zombie,Chidi Njokuani,Michal Oleksiejczuk,Middleweight Bout,KO/TKO,1,4:16,3 Rnd (5-5-5),Punches to Head On Ground,Loss
@@ -2195,12 +2353,12 @@ UFC 292: Sterling vs. O'Malley,Aljamain Sterling,Sean O'Malley,UFC Bantamweight 
 UFC 292: Sterling vs. O'Malley,Sean O'Malley,Aljamain Sterling,UFC Bantamweight Title Bout,KO/TKO,2,0:51,5 Rnd (5-5-5-5-5),Punches to Head On Ground,Win
 UFC 292: Sterling vs. O'Malley,Zhang Weili,Amanda Lemos,UFC Women's Strawweight Title Bout,Decision - Unanimous,5,5:00,5 Rnd (5-5-5-5-5),Sal D'amato 43 - 50.Chris Lee 44 - 50.Nick Mahmood 45 - 49.,Win
 UFC 292: Sterling vs. O'Malley,Amanda Lemos,Zhang Weili,UFC Women's Strawweight Title Bout,Decision - Unanimous,5,5:00,5 Rnd (5-5-5-5-5),Sal D'amato 43 - 50.Chris Lee 44 - 50.Nick Mahmood 45 - 49.,Loss
-UFC 292: Sterling vs. O'Malley,Neil Magny,Ian Machado Garry,Welterweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Ben Cartlidge 26 - 30.Marcel Valera 26 - 30.David Ginsberg 24 - 30.,Loss
-UFC 292: Sterling vs. O'Malley,Ian Machado Garry,Neil Magny,Welterweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Ben Cartlidge 26 - 30.Marcel Valera 26 - 30.David Ginsberg 24 - 30.,Win
+UFC 292: Sterling vs. O'Malley,Neil Magny,Ian Machado Garry,Welterweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Ben Cartlidge 26 - 30.Marcel Varela 26 - 30.David Ginsberg 24 - 30.,Loss
+UFC 292: Sterling vs. O'Malley,Ian Machado Garry,Neil Magny,Welterweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Ben Cartlidge 26 - 30.Marcel Varela 26 - 30.David Ginsberg 24 - 30.,Win
 UFC 292: Sterling vs. O'Malley,Da'Mon Blackshear,Mario Bautista,Bantamweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Sal D'amato 28 - 29.Chris Lee 28 - 29.Steve Rita 27 - 30.,Loss
 UFC 292: Sterling vs. O'Malley,Mario Bautista,Da'Mon Blackshear,Bantamweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Sal D'amato 28 - 29.Chris Lee 28 - 29.Steve Rita 27 - 30.,Win
-UFC 292: Sterling vs. O'Malley,Marlon Vera,Pedro Munhoz,Bantamweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Nick Mahmood 27 - 30.Marcel Valera 27 - 30.Ben Cartlidge 28 - 29.,Win
-UFC 292: Sterling vs. O'Malley,Pedro Munhoz,Marlon Vera,Bantamweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Nick Mahmood 27 - 30.Marcel Valera 27 - 30.Ben Cartlidge 28 - 29.,Loss
+UFC 292: Sterling vs. O'Malley,Marlon Vera,Pedro Munhoz,Bantamweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Nick Mahmood 27 - 30.Marcel Varela 27 - 30.Ben Cartlidge 28 - 29.,Win
+UFC 292: Sterling vs. O'Malley,Pedro Munhoz,Marlon Vera,Bantamweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Nick Mahmood 27 - 30.Marcel Varela 27 - 30.Ben Cartlidge 28 - 29.,Loss
 UFC 292: Sterling vs. O'Malley,Chris Weidman,Brad Tavares,Middleweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Sal D'amato 27 - 30.Nick Mahmood 27 - 30.Ben Cartlidge 27 - 30.,Loss
 UFC 292: Sterling vs. O'Malley,Brad Tavares,Chris Weidman,Middleweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Sal D'amato 27 - 30.Nick Mahmood 27 - 30.Ben Cartlidge 27 - 30.,Win
 UFC 292: Sterling vs. O'Malley,Gregory Rodrigues,Denis Tiuliulin,Middleweight Bout,KO/TKO,1,1:43,3 Rnd (5-5-5),Elbows to Head From Mount,Win
@@ -2209,8 +2367,8 @@ UFC 292: Sterling vs. O'Malley,Kurt Holobaugh,Austin Hubbard,Lightweight Bout,Su
 UFC 292: Sterling vs. O'Malley,Austin Hubbard,Kurt Holobaugh,Lightweight Bout,Submission,2,2:39,3 Rnd + OT (5-5-5-5),Triangle Choke From Bottom Guard,Loss
 UFC 292: Sterling vs. O'Malley,Brad Katona,Cody Gibson,Bantamweight Bout,Decision - Unanimous,3,5:00,3 Rnd + OT (5-5-5-5),Nick Mahmood 28 - 29.David Ginsberg 28 - 29.Chris Lee 27 - 30.,Win
 UFC 292: Sterling vs. O'Malley,Cody Gibson,Brad Katona,Bantamweight Bout,Decision - Unanimous,3,5:00,3 Rnd + OT (5-5-5-5),Nick Mahmood 28 - 29.David Ginsberg 28 - 29.Chris Lee 27 - 30.,Loss
-UFC 292: Sterling vs. O'Malley,Andre Petroski,Gerald Meerschaert,Middleweight Bout,Decision - Split,3,5:00,3 Rnd (5-5-5),Marcel Valera 28 - 29.Sal D'amato 29 - 28.Steve Rita 28 - 29.,Win
-UFC 292: Sterling vs. O'Malley,Gerald Meerschaert,Andre Petroski,Middleweight Bout,Decision - Split,3,5:00,3 Rnd (5-5-5),Marcel Valera 28 - 29.Sal D'amato 29 - 28.Steve Rita 28 - 29.,Loss
+UFC 292: Sterling vs. O'Malley,Andre Petroski,Gerald Meerschaert,Middleweight Bout,Decision - Split,3,5:00,3 Rnd (5-5-5),Marcel Varela 28 - 29.Sal D'amato 29 - 28.Steve Rita 28 - 29.,Win
+UFC 292: Sterling vs. O'Malley,Gerald Meerschaert,Andre Petroski,Middleweight Bout,Decision - Split,3,5:00,3 Rnd (5-5-5),Marcel Varela 28 - 29.Sal D'amato 29 - 28.Steve Rita 28 - 29.,Loss
 UFC 292: Sterling vs. O'Malley,Andrea Lee,Natalia Silva,Women's Flyweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),David Ginsberg 27 - 30.Nick Mahmood 27 - 30.Ben Cartlidge 27 - 30.,Loss
 UFC 292: Sterling vs. O'Malley,Natalia Silva,Andrea Lee,Women's Flyweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),David Ginsberg 27 - 30.Nick Mahmood 27 - 30.Ben Cartlidge 27 - 30.,Win
 UFC 292: Sterling vs. O'Malley,Karine Silva,Maryna Moroz,Women's Flyweight Bout,Submission,1,4:59,3 Rnd (5-5-5),Guillotine Choke From Bottom Guard,Win
@@ -2569,8 +2727,8 @@ UFC Fight Night: Song vs. Simon,Rodolfo Vieira,Cody Brundage,Middleweight Bout,S
 UFC Fight Night: Song vs. Simon,Cody Brundage,Rodolfo Vieira,Middleweight Bout,Submission,2,1:28,3 Rnd (5-5-5),Arm Triangle From Mount,Loss
 UFC Fight Night: Song vs. Simon,Julian Erosa,Fernando Padilla,Featherweight Bout,KO/TKO,1,1:41,3 Rnd (5-5-5),Punches to Head At Distance,Loss
 UFC Fight Night: Song vs. Simon,Fernando Padilla,Julian Erosa,Featherweight Bout,KO/TKO,1,1:41,3 Rnd (5-5-5),Punches to Head At Distance,Win
-UFC Fight Night: Song vs. Simon,Marcos Rogerio de Lima,Waldo Cortes-Acosta,Heavyweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Mike Bell 28 - 29.Eric Colon 28 - 29.Anthony Maness 28 - 29.,Win
-UFC Fight Night: Song vs. Simon,Waldo Cortes-Acosta,Marcos Rogerio de Lima,Heavyweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Mike Bell 28 - 29.Eric Colon 28 - 29.Anthony Maness 28 - 29.,Loss
+UFC Fight Night: Song vs. Simon,Marcos Rogerio de Lima,Waldo Cortes Acosta,Heavyweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Mike Bell 28 - 29.Eric Colon 28 - 29.Anthony Maness 28 - 29.,Win
+UFC Fight Night: Song vs. Simon,Waldo Cortes Acosta,Marcos Rogerio de Lima,Heavyweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Mike Bell 28 - 29.Eric Colon 28 - 29.Anthony Maness 28 - 29.,Loss
 UFC Fight Night: Song vs. Simon,Josh Quinlan,Trey Waters,Welterweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Eric Colon 27 - 30.Chris Lee 27 - 30.Tony Weeks 27 - 30.,Loss
 UFC Fight Night: Song vs. Simon,Trey Waters,Josh Quinlan,Welterweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Eric Colon 27 - 30.Chris Lee 27 - 30.Tony Weeks 27 - 30.,Win
 UFC Fight Night: Song vs. Simon,Martin Buday,Jake Collier,Heavyweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Sal D'amato 28 - 29.Junichiro Kamijo 28 - 29.Anthony Maness 28 - 29.,Win
@@ -2983,8 +3141,8 @@ UFC Fight Night: Thompson vs. Holland,Yazmin Jauregui,Istela Nunes,Women's Straw
 UFC Fight Night: Thompson vs. Holland,Istela Nunes,Yazmin Jauregui,Women's Strawweight Bout,KO/TKO,2,4:06,3 Rnd (5-5-5),Punches to Head From Guard,Loss
 UFC Fight Night: Nzechukwu vs. Cutelaba,Kennedy Nzechukwu,Ion Cutelaba,Light Heavyweight Bout,KO/TKO,2,1:02,3 Rnd (5-5-5),Knee to Head At Distance,Win
 UFC Fight Night: Nzechukwu vs. Cutelaba,Ion Cutelaba,Kennedy Nzechukwu,Light Heavyweight Bout,KO/TKO,2,1:02,3 Rnd (5-5-5),Knee to Head At Distance,Loss
-UFC Fight Night: Nzechukwu vs. Cutelaba,Chase Sherman,Waldo Cortes-Acosta,Heavyweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Anthony Maness 27 - 30.Sal D'amato 28 - 29.Junichiro Kamijo 28 - 29.,Loss
-UFC Fight Night: Nzechukwu vs. Cutelaba,Waldo Cortes-Acosta,Chase Sherman,Heavyweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Anthony Maness 27 - 30.Sal D'amato 28 - 29.Junichiro Kamijo 28 - 29.,Win
+UFC Fight Night: Nzechukwu vs. Cutelaba,Chase Sherman,Waldo Cortes Acosta,Heavyweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Anthony Maness 27 - 30.Sal D'amato 28 - 29.Junichiro Kamijo 28 - 29.,Loss
+UFC Fight Night: Nzechukwu vs. Cutelaba,Waldo Cortes Acosta,Chase Sherman,Heavyweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Anthony Maness 27 - 30.Sal D'amato 28 - 29.Junichiro Kamijo 28 - 29.,Win
 UFC Fight Night: Nzechukwu vs. Cutelaba,Andre Fialho,Muslim Salikhov,Welterweight Bout,KO/TKO,3,1:03,3 Rnd (5-5-5),Kick to Head At DistanceWheel Kick,Loss
 UFC Fight Night: Nzechukwu vs. Cutelaba,Muslim Salikhov,Andre Fialho,Welterweight Bout,KO/TKO,3,1:03,3 Rnd (5-5-5),Kick to Head At DistanceWheel Kick,Win
 UFC Fight Night: Nzechukwu vs. Cutelaba,Jack Della Maddalena,Danny Roberts,Welterweight Bout,KO/TKO,1,3:24,3 Rnd (5-5-5),Punches to Head At Distance,Win
@@ -3057,8 +3215,8 @@ UFC Fight Night: Kattar vs. Allen,Calvin Kattar,Arnold Allen,Featherweight Bout,
 UFC Fight Night: Kattar vs. Allen,Arnold Allen,Calvin Kattar,Featherweight Bout,KO/TKO,2,0:08,5 Rnd (5-5-5-5-5),to At DistanceKnee injury,Win
 UFC Fight Night: Kattar vs. Allen,Tim Means,Max Griffin,Welterweight Bout,Decision - Split,3,5:00,3 Rnd (5-5-5),Ben Cartlidge 28 - 29.Eric Colon 29 - 28.Derek Cleary 27 - 30.,Loss
 UFC Fight Night: Kattar vs. Allen,Max Griffin,Tim Means,Welterweight Bout,Decision - Split,3,5:00,3 Rnd (5-5-5),Ben Cartlidge 28 - 29.Eric Colon 29 - 28.Derek Cleary 27 - 30.,Win
-UFC Fight Night: Kattar vs. Allen,Waldo Cortes-Acosta,Jared Vanderaa,Heavyweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Ron McCarthy 27 - 30.Junichiro Kamijo 28 - 29.Tony Weeks 28 - 29.,Win
-UFC Fight Night: Kattar vs. Allen,Jared Vanderaa,Waldo Cortes-Acosta,Heavyweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Ron McCarthy 27 - 30.Junichiro Kamijo 28 - 29.Tony Weeks 28 - 29.,Loss
+UFC Fight Night: Kattar vs. Allen,Waldo Cortes Acosta,Jared Vanderaa,Heavyweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Ron McCarthy 27 - 30.Junichiro Kamijo 28 - 29.Tony Weeks 28 - 29.,Win
+UFC Fight Night: Kattar vs. Allen,Jared Vanderaa,Waldo Cortes Acosta,Heavyweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Ron McCarthy 27 - 30.Junichiro Kamijo 28 - 29.Tony Weeks 28 - 29.,Loss
 UFC Fight Night: Kattar vs. Allen,Josh Fremd,Tresean Gore,Middleweight Bout,Submission,2,0:49,3 Rnd (5-5-5),Guillotine Choke On Ground,Loss
 UFC Fight Night: Kattar vs. Allen,Tresean Gore,Josh Fremd,Middleweight Bout,Submission,2,0:49,3 Rnd (5-5-5),Guillotine Choke On Ground,Win
 UFC Fight Night: Kattar vs. Allen,Dustin Jacoby,Khalil Rountree Jr.,Light Heavyweight Bout,Decision - Split,3,5:00,3 Rnd (5-5-5),Ben Cartlidge 28 - 29.Ron McCarthy 29 - 28.Chris Flores 28 - 29.,Loss
@@ -3903,8 +4061,8 @@ UFC 270: Ngannou vs. Gane,Matt Frevola,Genaro Valdez,Lightweight Bout,KO/TKO,1,3
 UFC 270: Ngannou vs. Gane,Genaro Valdez,Matt Frevola,Lightweight Bout,KO/TKO,1,3:15,3 Rnd (5-5-5),Punches to Head From Back Control,Loss
 UFC 270: Ngannou vs. Gane,Silvana Gomez Juarez,Vanessa Demopoulos,Women's Strawweight Bout,Submission,1,2:25,3 Rnd (5-5-5),Armbar From Guard,Loss
 UFC 270: Ngannou vs. Gane,Vanessa Demopoulos,Silvana Gomez Juarez,Women's Strawweight Bout,Submission,1,2:25,3 Rnd (5-5-5),Armbar From Guard,Win
-UFC 270: Ngannou vs. Gane,Kay Hansen,Jasmine Jasudavicius,Women's Flyweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Wade Vierra 27 - 30.Chris Crail 28 - 29.Marcel Valera 28 - 29.,Loss
-UFC 270: Ngannou vs. Gane,Jasmine Jasudavicius,Kay Hansen,Women's Flyweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Wade Vierra 27 - 30.Chris Crail 28 - 29.Marcel Valera 28 - 29.,Win
+UFC 270: Ngannou vs. Gane,Kay Hansen,Jasmine Jasudavicius,Women's Flyweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Wade Vierra 27 - 30.Chris Crail 28 - 29.Marcel Varela 28 - 29.,Loss
+UFC 270: Ngannou vs. Gane,Jasmine Jasudavicius,Kay Hansen,Women's Flyweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Wade Vierra 27 - 30.Chris Crail 28 - 29.Marcel Varela 28 - 29.,Win
 UFC Fight Night: Kattar vs. Chikadze,Calvin Kattar,Giga Chikadze,Featherweight Bout,Decision - Unanimous,5,5:00,5 Rnd (5-5-5-5-5),Derek Cleary 45 - 50.Sal D'amato 45 - 50.Chris Lee 44 - 50.,Win
 UFC Fight Night: Kattar vs. Chikadze,Giga Chikadze,Calvin Kattar,Featherweight Bout,Decision - Unanimous,5,5:00,5 Rnd (5-5-5-5-5),Derek Cleary 45 - 50.Sal D'amato 45 - 50.Chris Lee 44 - 50.,Loss
 UFC Fight Night: Kattar vs. Chikadze,Jake Collier,Chase Sherman,Heavyweight Bout,Submission,1,2:26,3 Rnd (5-5-5),Rear Naked Choke,Win
@@ -6029,10 +6187,10 @@ UFC Fight Night: Maia vs. Askren,Raphael Pessoa,Jeff Hughes,Heavyweight Bout,Dec
 UFC Fight Night: Maia vs. Askren,Jeff Hughes,Raphael Pessoa,Heavyweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Howard Hughes 27 - 30.Evan Field 27 - 30.Takeo Kobayashi 27 - 30.,Loss
 UFC Fight Night: Reyes vs. Weidman,Dominick Reyes,Chris Weidman,Light Heavyweight Bout,KO/TKO,1,1:43,5 Rnd (5-5-5-5-5),Punches to Head On Ground,Win
 UFC Fight Night: Reyes vs. Weidman,Chris Weidman,Dominick Reyes,Light Heavyweight Bout,KO/TKO,1,1:43,5 Rnd (5-5-5-5-5),Punches to Head On Ground,Loss
-UFC Fight Night: Reyes vs. Weidman,Yair Rodriguez,Jeremy Stephens,Featherweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),David Ginsberg 28 - 29.Dave Tirelli 28 - 29.Macel Varella 28 - 29.,Win
-UFC Fight Night: Reyes vs. Weidman,Jeremy Stephens,Yair Rodriguez,Featherweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),David Ginsberg 28 - 29.Dave Tirelli 28 - 29.Macel Varella 28 - 29.,Loss
-UFC Fight Night: Reyes vs. Weidman,Greg Hardy,Ben Sosoli,Heavyweight Bout,Overturned,3,5:00,3 Rnd (5-5-5),Illegal Inhaler Use by HardyLars Borssen 28 - 29.Sal D'amato 28 - 29.Macel Varella 28 - 29.,No Contest
-UFC Fight Night: Reyes vs. Weidman,Ben Sosoli,Greg Hardy,Heavyweight Bout,Overturned,3,5:00,3 Rnd (5-5-5),Illegal Inhaler Use by HardyLars Borssen 28 - 29.Sal D'amato 28 - 29.Macel Varella 28 - 29.,No Contest
+UFC Fight Night: Reyes vs. Weidman,Yair Rodriguez,Jeremy Stephens,Featherweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),David Ginsberg 28 - 29.Dave Tirelli 28 - 29.Marcel Varela 28 - 29.,Win
+UFC Fight Night: Reyes vs. Weidman,Jeremy Stephens,Yair Rodriguez,Featherweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),David Ginsberg 28 - 29.Dave Tirelli 28 - 29.Marcel Varela 28 - 29.,Loss
+UFC Fight Night: Reyes vs. Weidman,Greg Hardy,Ben Sosoli,Heavyweight Bout,Overturned,3,5:00,3 Rnd (5-5-5),Illegal Inhaler Use by HardyLars Borssen 28 - 29.Sal D'amato 28 - 29.Marcel Varela 28 - 29.,No Contest
+UFC Fight Night: Reyes vs. Weidman,Ben Sosoli,Greg Hardy,Heavyweight Bout,Overturned,3,5:00,3 Rnd (5-5-5),Illegal Inhaler Use by HardyLars Borssen 28 - 29.Sal D'amato 28 - 29.Marcel Varela 28 - 29.,No Contest
 UFC Fight Night: Reyes vs. Weidman,Joe Lauzon,Jonathan Pearce,Lightweight Bout,KO/TKO,1,1:33,3 Rnd (5-5-5),Punches to Head From Back Control,Win
 UFC Fight Night: Reyes vs. Weidman,Jonathan Pearce,Joe Lauzon,Lightweight Bout,KO/TKO,1,1:33,3 Rnd (5-5-5),Punches to Head From Back Control,Loss
 UFC Fight Night: Reyes vs. Weidman,Maycee Barber,Gillian Robertson,Women's Flyweight Bout,KO/TKO,1,3:04,3 Rnd (5-5-5),Punches to Head At Distance,Win
@@ -6047,8 +6205,8 @@ UFC Fight Night: Reyes vs. Weidman,Kyle Bochniak,Sean Woodson,Featherweight Bout
 UFC Fight Night: Reyes vs. Weidman,Sean Woodson,Kyle Bochniak,Featherweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Marcelo Vilhena 26 - 30.Sal D'amato 27 - 30.Nick Mahmood 27 - 30.,Win
 UFC Fight Night: Reyes vs. Weidman,Randy Costa,Boston Salmon,Bantamweight Bout,KO/TKO,1,2:15,3 Rnd (5-5-5),Punch to Head At Distance,Win
 UFC Fight Night: Reyes vs. Weidman,Boston Salmon,Randy Costa,Bantamweight Bout,KO/TKO,1,2:15,3 Rnd (5-5-5),Punch to Head At Distance,Loss
-UFC Fight Night: Reyes vs. Weidman,Court McGee,Sean Brady,Welterweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Chris Lee 28 - 29.Dave Tirelli 27 - 30.Macel Varella 27 - 30.,Loss
-UFC Fight Night: Reyes vs. Weidman,Sean Brady,Court McGee,Welterweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Chris Lee 28 - 29.Dave Tirelli 27 - 30.Macel Varella 27 - 30.,Win
+UFC Fight Night: Reyes vs. Weidman,Court McGee,Sean Brady,Welterweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Chris Lee 28 - 29.Dave Tirelli 27 - 30.Marcel Varela 27 - 30.,Loss
+UFC Fight Night: Reyes vs. Weidman,Sean Brady,Court McGee,Welterweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Chris Lee 28 - 29.Dave Tirelli 27 - 30.Marcel Varela 27 - 30.,Win
 UFC Fight Night: Reyes vs. Weidman,Brendan Allen,Kevin Holland,Middleweight Bout,Submission,2,3:38,3 Rnd (5-5-5),Rear Naked Choke,Win
 UFC Fight Night: Reyes vs. Weidman,Kevin Holland,Brendan Allen,Middleweight Bout,Submission,2,3:38,3 Rnd (5-5-5),Rear Naked Choke,Loss
 UFC Fight Night: Reyes vs. Weidman,Daniel Spitz,Tanner Boser,Heavyweight Bout,Decision - Unanimous,3,5:00,3 Rnd (5-5-5),Eric Colon 27 - 30.Nick Mahmood 27 - 30.Dave Tirelli 27 - 30.,Loss

@@ -2,12 +2,13 @@ import pandas as pd
 from pathlib import Path
 from bson import ObjectId
 import sys
-from backend.db.mongo import fighters_collection
-from backend.models.fighter import Fighter
 
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
 sys.path.append(str(BASE_DIR))
 csv_path = BASE_DIR / "data" / "ufc_fighter_tott.csv"  # updated CSV file
+
+from backend.db.mongo import fighters_collection
+from backend.models.fighter import Fighter
 
 def populate_fighters(csv_path):
     df = pd.read_csv(csv_path)
