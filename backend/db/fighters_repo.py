@@ -44,6 +44,7 @@ def get_fighter_avgs_with_info(fighter_id: str) -> Optional[Dict]:
         # Fighter info fields
         "fighter_id": fighter.get("fighter_id"),
         "fighter_name": fighter.get("fighter_info", {}).get("fighter_name") or fighter.get("fighter"),
+        "height": fighter.get("fighter_info", {}).get("height"),
         "dob": fighter.get("fighter_info", {}).get("dob"),
         "reach": fighter.get("fighter_info", {}).get("reach"),
         "stance": fighter.get("fighter_info", {}).get("stance"),

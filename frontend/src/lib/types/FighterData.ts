@@ -6,6 +6,7 @@ export interface FighterData {
   dob?: string;
   reach?: string;
   stance?: string;
+  height?: string;
 
   // Career averages 
   sig_str_landed: number;

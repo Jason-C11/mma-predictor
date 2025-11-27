@@ -67,6 +67,7 @@ export default function FighterStats() {
     fmt?: (v: any) => string;
   }[] = [
     { label: "DOB", key: "dob" },
+    { label: "Height", key: "height"},
     { label: "Reach", key: "reach" },
     { label: "Stance", key: "stance" },
     {
