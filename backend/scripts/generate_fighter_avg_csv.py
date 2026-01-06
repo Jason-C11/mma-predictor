@@ -91,7 +91,7 @@ agg_cols = [f"{c}_landed" for c in cols_to_parse] + \
            ["kd", "sub.att", "rev.", "ctrl_seconds"]
 
 fighter_stats = (
-    rounds_df.groupby(["event", "bout", "fighter"], as_index=False)[agg_cols].sum()
+    rounds_df.groupby(["event", "bout", "fighter"], as_index=False, sort=False)[agg_cols].sum().reset_index()
 )
 
 # Compute accuracy metrics
@@ -107,37 +107,50 @@ for col in ["event", "bout"]:
     fighter_stats[col] = fighter_stats[col].apply(clean_text)
 
 #===========================================================
-#Compute career averages per fighter
+#Compute averages over n fights per fighter
 #===========================================================
+def n_recent_average(n):
+    if n:
+        avg_df = fighter_stats.groupby("fighter").head(n).groupby("fighter").mean(numeric_only=True).reset_index()
+    else:
+        avg_df = fighter_stats.groupby("fighter").mean(numeric_only=True).reset_index()
 
-career_avg_df = fighter_stats.groupby("fighter").mean(numeric_only=True).reset_index()
+    # int_cols = [
+    #     'kd', 'sub.att', 'rev.', 'ctrl_seconds', 'sig.str._landed', 
+    #     'total_str._landed', 'td_landed', 'head_landed', 'body_landed',
+    #     'leg_landed', 'distance_landed', 'clinch_landed', 'ground_landed',
+    #     'sig.str._attempts', 'total_str._attempts', 'td_attempts'
+    # ]
+    # # career_avg_df[int_cols] = career_avg_df[int_cols].round()
 
-# int_cols = [
-#     'kd', 'sub.att', 'rev.', 'ctrl_seconds', 'sig.str._landed', 
-#     'total_str._landed', 'td_landed', 'head_landed', 'body_landed',
-#     'leg_landed', 'distance_landed', 'clinch_landed', 'ground_landed',
-#     'sig.str._attempts', 'total_str._attempts', 'td_attempts'
-# ]
-# # career_avg_df[int_cols] = career_avg_df[int_cols].round()
+    #Check if any of the accuracy columns are NaN --> set to 0
+    #May need to change if model changes
+    avg_df.drop(columns="index", inplace=True)
+    avg_df.fillna({"td_acc": 0}, inplace=True)
+    avg_df.fillna({"sig_str_acc": 0}, inplace=True)
+    #===========================================================
+    #Final cleanup of column names
+    #===========================================================
 
-#Check if any of the accuracy columns are NaN --> set to 0
-#May need to change if model changes
-career_avg_df["td_acc"].fillna(0, inplace=True)
-career_avg_df["sig_str_acc"].fillna(0, inplace=True)
-#===========================================================
-#Final cleanup of column names
-#===========================================================
-
-career_avg_df.columns = (
-    career_avg_df.columns
-    .str.replace(".","_", regex=False)
-    .str.replace("__","_", regex=False)
-    .str.rstrip("_")
-)
+    avg_df.columns = (
+        avg_df.columns
+        .str.replace(".","_", regex=False)
+        .str.replace("__","_", regex=False)
+        .str.rstrip("_")
+    )
+    
+    return avg_df
 
 #===========================================================
 #Export to csv
 #===========================================================
+career_avg_df = n_recent_average(None)
 save_path = os.path.join(os.path.dirname(__file__), "../../data/career_avg_stats.csv")
 career_avg_df.to_csv(save_path, index=False)
+
+#===== Last 5 average
+last_five_avg_df = n_recent_average(5)
+save_path = os.path.join(os.path.dirname(__file__), "../../data/last_five_avg.csv")
+last_five_avg_df.to_csv(save_path, index=False)
+
 print("Successfully exported to csv")
