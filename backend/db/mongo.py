@@ -13,6 +13,9 @@ db = client[DB_NAME]
 fighters_career_avgs_collection = db["fighter_career_avgs"]
 fighters_career_avgs_collection.create_index("fighter_id", unique=True)
 
+fighters_last_five_avgs_collection = db["fighter_last_five_avgs"]
+fighters_last_five_avgs_collection.create_index("fighter_id", unique=True)
+
 fighters_collection = db["fighters"]
 fighters_collection.create_index("fighter_id", unique=True)
 
