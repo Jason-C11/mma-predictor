@@ -48,7 +48,8 @@ export default function HomePage() {
         const result: PredictionResult | any = await predictFight(
           fighter1.fighter_id,
           fighter2.fighter_id,
-          defaultModel
+          defaultModel,
+          true
         );
 
         let formattedProbabilities = "";

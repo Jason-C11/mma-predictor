@@ -38,13 +38,15 @@ export const fetchFighterHistory = async (
 export const predictFight = async (
   fighter1Id: string,
   fighter2Id: string,
-  model: string
+  model: string,
+  useRecent: boolean
 ): Promise<PredictionResult> => {
   const { data } = await axios.get<PredictionResult>(`${API_BASE}/predict`, {
     params: {
       fighter1_id: fighter1Id,
       fighter2_id: fighter2Id,
       model: model,
+      recent: useRecent
     },
   });
   return {

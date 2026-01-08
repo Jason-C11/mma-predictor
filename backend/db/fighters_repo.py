@@ -1,5 +1,5 @@
 from typing import Optional, List, Dict
-from db.mongo import fighters_career_avgs_collection, fighters_collection, fighter_history_collection
+from db.mongo import fighters_career_avgs_collection, fighters_collection, fighter_history_collection, fighters_last_five_avgs_collection
 from models.fighter_career_avg import FighterCareerAvg 
 
 def get_all_fighters() -> List[Dict]:
@@ -9,8 +9,12 @@ def get_all_fighters() -> List[Dict]:
 def get_fighter_by_id(fighter_id: str) -> Optional[Dict]:
     return fighters_collection.find_one({"fighter_id": fighter_id})
 
-def get_fighter_avgs_by_id(fighter_id: str) -> Optional[Dict]:
-    fighter_avg_data = fighters_career_avgs_collection.find_one({"fighter_id": fighter_id})
+def get_fighter_avgs_by_id(fighter_id: str, recent: bool) -> Optional[Dict]:
+    if recent:
+        fighter_avg_data = fighters_last_five_avgs_collection.find_one({"fighter_id": fighter_id})
+    else:
+        fighter_avg_data = fighters_career_avgs_collection.find_one({"fighter_id": fighter_id})
+
     if fighter_avg_data:
         return format_fighter_avgs(fighter_avg_data)
     return None

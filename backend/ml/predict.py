@@ -28,16 +28,16 @@ all_features = ['sig_str_landed_fighter1', 'total_str_landed_fighter1',
        'td_acc_diff']
 
 
-def get_fighter_stats(fighter_id: int):
+def get_fighter_stats(fighter_id: int, recent: bool):
     """Fetch fighter stats from MongoDB by fighter_id"""
-    fighter = get_fighter_avgs_by_id(fighter_id)
+    fighter = get_fighter_avgs_by_id(fighter_id, recent)
     if not fighter:
         raise ValueError(f"Fighter with id {fighter_id} not found in DB")
     return fighter
 
-def build_feature_vector(f1_id: int, f2_id: int):
-    f1 = get_fighter_stats(f1_id)
-    f2 = get_fighter_stats(f2_id)
+def build_feature_vector(f1_id: int, f2_id: int, recent: bool):
+    f1 = get_fighter_stats(f1_id, recent)
+    f2 = get_fighter_stats(f2_id, recent)
 
     f1_name = f1["fighter"]
     f2_name= f2["fighter"]
@@ -76,9 +76,9 @@ def build_feature_vector(f1_id: int, f2_id: int):
     return X, f1_name, f2_name
 
 
-def predict_fight(f1_id: int, f2_id: int, winner_model, scaler=None):
+def predict_fight(f1_id: int, f2_id: int, winner_model, recent, scaler=None):
 
-    X, f1_name, f2_name = build_feature_vector(f1_id, f2_id)
+    X, f1_name, f2_name = build_feature_vector(f1_id, f2_id, recent)
     # Winner prediction
     
     win_pred = winner_model.predict(X)[0]

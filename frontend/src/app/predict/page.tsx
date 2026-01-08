@@ -4,14 +4,16 @@ import { useState } from "react";
 import { Fighter } from "@/lib/types/Fighter";
 import { PredictionResult } from "@/lib/types/PredictionResults";
 import { predictFight, fetchFighters } from "@/lib/api";
-import { Box, Button, Typography } from "@mui/material";
+import { Box, Button, Checkbox, FormControlLabel, Tooltip, Typography } from "@mui/material";
 import SearchDropdown, { OptionType } from "@/components/SearchDropdown";
 import { useQuery } from "@tanstack/react-query";
 import ProbabilityRing from "@/components/ProbabilityRing";
+import InfoIcon from "@mui/icons-material/Info";
 
 export default function PredictionPage() {
   const [fighter1, setFighter1] = useState<OptionType | null>(null);
   const [fighter2, setFighter2] = useState<OptionType | null>(null);
+  const [useRecent, setRecent] = useState(false);
   const [model, setModel] = useState<OptionType>({
     label: "Random Forest",
     id: "Random Forest",
@@ -48,7 +50,8 @@ export default function PredictionPage() {
       const result: PredictionResult | any = await predictFight(
         fighter1.id,
         fighter2.id,
-        model.id
+        model.id,
+        useRecent
       );
 
       let formattedProbabilities = "";
@@ -127,6 +130,25 @@ export default function PredictionPage() {
           value={fighter2}
           onChange={setFighter2}
         />
+        <FormControlLabel
+          control={
+            <Checkbox
+              checked={useRecent}
+              onChange={(e) => setRecent(e.target.checked)}
+            />
+          }
+          label={
+            <Box sx={{ display: "flex", alignItems: "center", gap: 0.75 }}>
+              Use Recent Stats
+              <Tooltip title="Average over the last 5 fights instead of career average" arrow>
+                <InfoIcon
+                  fontSize="inherit"
+                />
+              </Tooltip>
+            </Box>
+          }
+        />
+
       </Box>
 
       {/* Predict button */}

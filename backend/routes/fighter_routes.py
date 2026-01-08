@@ -35,10 +35,10 @@ def get_fighter_hist(fighter_id: str):
 
 
 @router.get("/predict")
-def fight_prediction(fighter1_id: str, fighter2_id: str, model: str):
+def fight_prediction(fighter1_id: str, fighter2_id: str, model: str, recent: bool):
     try:
         model_obj = get_winner_model(model)
-        return predict_fight(fighter1_id, fighter2_id, model_obj)
+        return predict_fight(fighter1_id, fighter2_id, model_obj, recent)
     except Exception as e:
         raise HTTPException(status_code=400, detail=str(e))
 
