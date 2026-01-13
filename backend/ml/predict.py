@@ -5,27 +5,13 @@ from db.fighters_repo import get_all_fighters, get_fighter_avgs_by_id
 
 
 # Feature columns used during training
-all_features = ['sig_str_landed_fighter1', 'total_str_landed_fighter1',
-       'td_landed_fighter1', 'head_landed_fighter1', 'body_landed_fighter1',
-       'leg_landed_fighter1', 'distance_landed_fighter1',
-       'clinch_landed_fighter1', 'ground_landed_fighter1',
-       'sig_str_attempts_fighter1', 'total_str_attempts_fighter1',
-       'td_attempts_fighter1', 'kd_fighter1', 'sub_att_fighter1',
-       'rev_fighter1', 'ctrl_seconds_fighter1', 'sig_str_acc_fighter1',
-       'td_acc_fighter1', 'sig_str_landed_fighter2',
-       'total_str_landed_fighter2', 'td_landed_fighter2',
-       'head_landed_fighter2', 'body_landed_fighter2', 'leg_landed_fighter2',
-       'distance_landed_fighter2', 'clinch_landed_fighter2',
-       'ground_landed_fighter2', 'sig_str_attempts_fighter2',
-       'total_str_attempts_fighter2', 'td_attempts_fighter2', 'kd_fighter2',
-       'sub_att_fighter2', 'rev_fighter2', 'ctrl_seconds_fighter2',
-       'sig_str_acc_fighter2', 'td_acc_fighter2', 'kd_diff',
-       'sig_str_landed_diff', 'sig_str_attempts_diff', 'total_str_landed_diff',
-       'total_str_attempts_diff', 'td_landed_diff', 'td_attempts_diff',
-       'sub_att_diff', 'rev_diff', 'ctrl_seconds_diff', 'head_landed_diff',
-       'body_landed_diff', 'leg_landed_diff', 'distance_landed_diff',
-       'clinch_landed_diff', 'ground_landed_diff', 'sig_str_acc_diff',
-       'td_acc_diff']
+all_features = ['kd_diff', 'sig_str_landed_diff', 'sig_str_attempts_diff',
+       'total_str_landed_diff', 'total_str_attempts_diff', 'td_landed_diff',
+       'td_attempts_diff', 'sub_att_diff', 'rev_diff', 'ctrl_seconds_diff',
+       'head_landed_diff', 'body_landed_diff', 'leg_landed_diff',
+       'distance_landed_diff', 'clinch_landed_diff', 'ground_landed_diff',
+       'sig_str_acc_diff', 'td_acc_diff', 'sig_str_landed_ratio',
+       'total_str_landed_ratio', 'td_landed_ratio', 'ctrl_seconds_ratio']
 
 
 def get_fighter_stats(fighter_id: int, recent: bool):
@@ -67,12 +53,28 @@ def build_feature_vector(f1_id: int, f2_id: int, recent: bool):
     "distance_landed", "clinch_landed", "ground_landed",
     "sig_str_acc", "td_acc"
     ]
-    
     for stat in stats:
         feat_vect[stat + "_diff"] = f1[stat] - f2[stat]
+
+    ratio_stats = ["sig_str_landed", "total_str_landed", "td_landed", "ctrl_seconds"]
+
+    for stat in ratio_stats:
+        feat_vect[stat + "_ratio"] = (f1[stat] + 1) / (f2[stat] + 1)
+
+
+    feat_vect["kd_diff"] = np.clip(feat_vect["kd_diff"], -4, 4)
+    feat_vect["ctrl_seconds_diff"] = np.clip(feat_vect["ctrl_seconds_diff"], -800, 800)
+
+    # ======== drop individual fighter stats
+    raw_cols = [k for k in feat_vect.keys() if "_fighter1" in k or "_fighter2" in k]
+    for k in raw_cols:
+        feat_vect.pop(k)
+
     
     X = pd.DataFrame([feat_vect])[all_features]
-
+    if all_features is not None:
+        X = X.reindex(columns=all_features, fill_value=0)
+    
     return X, f1_name, f2_name
 
 

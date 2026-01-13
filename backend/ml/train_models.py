@@ -177,7 +177,25 @@ stat_cols = [
 for col in stat_cols:
     full_df[f"{col}_diff"] = full_df[f"{col}_fighter1"] - full_df[f"{col}_fighter2"]
 
-diff_cols = [f"{c}_diff" for c in stat_cols]
+#===========================================================
+# Drop raw fighter columns and add ratios + remove outliers
+#===========================================================
+
+ratio_stats = ["sig_str_landed", "total_str_landed", "td_landed", "ctrl_seconds"]
+
+# Ratio columns (fighter1 / fighter2)
+for stat in ratio_stats:
+    col_f1 = f"{stat}_diff"  
+    col_ratio = f"{stat}_ratio"
+    full_df[col_ratio] = (full_df[f"{stat}_fighter1"] + 1) / (full_df[f"{stat}_fighter2"] + 1)
+
+# Remove outliers
+full_df["kd_diff"] = full_df["kd_diff"].clip(-4, 4)
+full_df["ctrl_seconds_diff"] = full_df["ctrl_seconds_diff"].clip(-800, 800)
+
+# Drop raw fighter stats (_fighter1 and _fighter2)
+raw_cols = [c for c in full_df.columns if "_fighter1" in c or "_fighter2" in c]
+full_df = full_df.drop(columns=raw_cols, errors="ignore")
 
 #===========================================================
 #Train/test split & oversampling & augmentation swap
@@ -197,16 +215,16 @@ X_train, X_test, y_train, y_test = train_test_split(
 ros = RandomOverSampler(random_state=42)
 X_train_res, y_train_res = ros.fit_resample(X_train, y_train)
 
-# Swap fighter1 and fighter2 stats
-fighter1_cols = [c for c in X.columns if "_fighter1" in c]
-fighter2_cols = [c for c in X.columns if "_fighter2" in c]
+# Swap fighter1 and fighter2 ratios and differences
+swap_cols = [c for c in X_train_res.columns if "_diff" in c or "_ratio" in c]
 
 X_swapped = X_train_res.copy()
-X_swapped[fighter1_cols] = X_train_res[fighter2_cols].values
-X_swapped[fighter2_cols] = X_train_res[fighter1_cols].values
+diff_swap_cols = [c for c in swap_cols if "_diff" in c]
+X_swapped[diff_swap_cols] = -X_train_res[diff_swap_cols]
 
-for col in diff_cols:
-    X_swapped[col] = -X_train_res[col]
+ratio_swap_cols = [c for c in swap_cols if "_ratio" in c]
+for c in ratio_swap_cols:
+    X_swapped[c] = 1 / X_train_res[c]
 
 y_swapped = 1 - y_train_res
 
